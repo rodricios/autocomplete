@@ -19,9 +19,15 @@ For example, all the Harry Potter and Hunger Games novels put together.
 
 What if I asked you to go through all the pages and all the words in those pages? 
 
-Now, I'm not saying to actually *read* the books. You know, just go through, beginning to end, and notice each word. For every new word you see, write it down, and put a "1" next to it, and everytime you see it again, add "1" more to the previous number. 
+Now I'm not asking you four to actually *read* the books. You know, just go through, beginning to end, and notice each word.
+
+For every new word you see, write it down, and put a "1" next to it, and everytime you see a word *again*, add "1" more to the previous number. 
 
 So basically I'm asking y'all to keep count of how many times a word comes up.
+
+Got it? If yes, cool! If not, find a sibling, friend, or adult near you and ask them to help you out :)
+
+...
 
 Say you start with *Harry Potter and the Sorcerer's Stone*:
 
@@ -38,7 +44,9 @@ And imagine that you're on the 5th word. This or something close to this is what
 
 Or if you're a *wannabe-Harry-Potter* fan, ah I'm just kidding!   
 
-If you started with The Hunger Games:
+If you started with *the-book-that-must-not-be-named* - I know you guys won't get it, but persons my age will :)
+
+But I'm sorry, so you started with *The Hunger Games*:
 
     When I wake up, the other side of the bed is cold...
 
@@ -66,7 +74,7 @@ See you next week!
 
 Back so soon? You might have something like this:
 
-    pst*, the format is:
+    psst*, remember, the format is:
      word -> # of times the word appears
     
     'the' -> 80030
@@ -98,11 +106,11 @@ Now on the *less-frequent* end you'll find your words appearing not as often...
     'expands'      -> 1
     'revolvers'    -> 1
 
-Yeah Chris? Oh, 'what does lez freken ten' mean? Um, so it means something like: *you won't see it that often*
+Yeah Chris? Oh, 'what does lez freken ten' mean? Um, so it means something like: *you probably won't hear or read that word very often.*
 
-Now what if I asked you to help me find this word I'm looking for? And I know it starts with the letters: 'th'.
+Now what if I asked you to help me find this word I'm looking for? And I know this word starts with the letters: 'th'.
 
-This you can do much faster! A blazing 5 minutes! Well you had to go through 29157 unique words after all!
+This I know you can do much faster! A blazing 5 minutes! IYou did have to go through 29157 unique words after all!
 
 
     'the'  -> 80030
@@ -118,7 +126,9 @@ This you can do much faster! A blazing 5 minutes! Well you had to go through 291
     ... 229 words more... 
     
 
-239 words? The word I'm looking for is on the tip of my tongue. I think the next letter is "i".
+239 words, still kind of lot though huh? And you know your brother, he's too lazy to do this work *by hand* (*cough* programming  *cough*) ;) 
+
+So the word I'm looking for is on the tip of my tongue. I think the next letter is "i".
 
 *1 minute later*
 
@@ -168,15 +178,15 @@ Ugh! I hate words!
 
 *Whoah, wait a minute! That was not cool of me! Let's relax for a minute.* 
 
-Let's try to give an imaginary hug to our word-factory in our brains. That part of our brain works so hard, even when we don't ask it to, aww how nice of of brain to do that. Not! 
+Let's try to give an imaginary hug to our word-factory in our brains. That part of our brain works so hard, even when we don't ask it to. How nice of brain to do that. Not! 
 
-Well I guess I should say, sometimes it's not so nice for our brains to distract us, especially when we have homework or real-world problems, like adult-homework. 
+Well I guess I should say, sometimes it's not so nice for our brains to distract us, especially when we have homework or other, real-world, problems like adult-homework. 
 
 How about this: try to think about *what* the next sentence coming out of our own mouths *will be*\*. 
 
-Now if you're thinking about what will be coming out of my mouth, or out of your mouth, or your mouth, or your mouth, or your mouth, you're doing it wrong! 
+Now if you're thinking about what will be coming out of my mouth, or out of your mouth, or your mouth, or your mouth, or your mouth, you're doing it wrong! (to readers who aren't one of my 4 younger siblings, that's how many I got).
 
-Think about *what* the next sentence coming out of *your own* mouth.
+Think about *what* the next sentence coming out of *your own* mouth might end up being.
 
 ...
 
@@ -186,9 +196,11 @@ What if I asked you to give me just a few reasons explaining *why* or *how* you 
 
 Wait, I can't even do that. Let's make it easier on ourselves and explain *why* and *how* we chose just the first *word*.
 
-Pretty hard huh?
+Still pretty hard huh? If you think this part is easy, I'm going to have to say "sorry" and ask you guys to try thinking about it maybe just one more time; this part isn't so easy to ask for help with either :/ 
 
-If you thought about it, it's pretty darn hard to give a *good and honest reason* why it is you chose the word you chose, at least without some notion of *probability*.
+If you thought about it, and you thought it was pretty darn hard to give a *good and honest* reason as to *why* it is you chose the word you chose, let's bring out a word you guys might not understand: *probability*.
+
+If you feel like you don't *get* what the word means, sure you do! Just use the word "probably" in one of your sentences, but make it kinda makes sense. 
 
 What do I mean? Well, let's just consider the English language. Like most other things, the English language has rules. 
 
@@ -214,7 +226,7 @@ Of course you could have! I bet you spent a millisecond thinking about whether o
 
 I *know* because I thought about using that word too!
 
-I can remember the first time I heard (or read) *guaiacol* like it was yesterday. I read it in some funky article on the internet. I found the in a list of words that don't appear too often in the English language.
+I can remember the first time I heard (or read) *guaiacol* like it was yesterday. I read it in some funky article on the internet. I found the word in a list of words that don't appear too often in the English language.
 
 After I read it, I was able to fit *guaiacol* nicely into that part of my brain where I... uhh.. was... able... uhh...
 
@@ -222,7 +234,9 @@ Oh, you *know*, that place in my brain where I get to choose whether I want to s
 
 ...
 
-Ok, so clearly I'm no brain-ician, and that may or may not be the way our brain works - actually, it's probably super super wrong. Even though that idea is probably wrong, the idea itself sounds like a pretty darn good way of suggesting the next word I'm trying to *type*. 
+Ok, so clearly I'm no brain-ician, and that may or may not be the way our brain works - actually, it's probably super super unlikely. 
+
+But even though that idea is probably wrong, the idea itself sounds like a pretty darn good way of suggesting the next word or words somebody is trying to *type*. 
 
 Hey, wait a minute. Where have we seen this before? 
 
@@ -294,7 +308,7 @@ At this point, you can't even call that length of time a *second*. But in that l
     'history' -> 56
     'heart'   -> 55
 
-And that brain you got did this realllllyyyyyy fast. Faster than Google, Bing, Yahoo and any other company can ever hope to beat. And it did this without even asking for your permission. 
+And that brain you got did this realllllyyyyyy fast. Faster than Google, Bing, Yahoo and any other company can ever hope to beat. And your brain did this without even asking for your permission. I think our brains are trying to control us you guys, oh no!
 
 ---
 
@@ -306,7 +320,7 @@ Another shoutout to [Peter Norvig](http://norvig.com) for inspiring me and proba
 
 And another one to Rob Renaud's [Gibberish Detector](https://github.com/rrenaud/Gibberish-Detector). I, out of pure chance, ran into his project some time after running into Norvig's article. I can't describe *how* much it helped solidify what the heavy hitters of "AI" consider to be introductory material. 
 
-I can't describe it because I literally *can't* describe it, that is, without me using "likely" and "probably" in what would have likely been every sentence, but who knows? 
+I can't describe it because I literally *can't* describe it, that is, without me using "likely" and "probably" in what would have likely been every sentence, but who really knows? 
 
-Warning! Second article about this exact thing, only expressed differently, coming soon! Oh and the code too, that is if someone hasn't gotten to translating the above article to code before I can get to uploading the project :P
+Warning! Second article about this exact thing, only expressed differently, coming soon! Oh and the code too, that is if someone hasn't gotten to translating the above article to code before I can get to uploading the project :P I'm trying to get the kinks out of here and the code so it's simple, duh!
 
