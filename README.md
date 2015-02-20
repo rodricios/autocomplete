@@ -3,6 +3,77 @@
 
 ---
 
+## How to use:
+
+```python
+from autocomplete import autocomplete, models
+
+# load pickled python Counter objects representing our predictive models
+# I use Peter Norvigs big.txt (http://norvig.com/big.txt) to create the predictive models
+models.load_models()
+
+# imagine writing "the b" 
+autocomplete.predict('the','b')
+
+[('blood', 204),
+ ('battle', 185),
+ ('bone', 175),
+ ('best', 149),
+ ('body', 149),
+ ...]
+
+# now you're typing "the bo"
+
+autocomplete.predict('the','bo')
+
+[('bone', 175),
+ ('body', 149),
+ ('bones', 122),
+ ('boy', 46),
+ ('bottom', 32),
+ ('box', 24),
+ ...]
+ 
+```
+
+If you have your own language model in the form described in [ELI5](#explain-like-im-5), then use the *models* submodule to call the training method:
+
+```python
+
+from autocomplete import models
+
+models.train_models('some giant string of text')
+
+```
+
+Want to run it as a server (bottlepy required)
+
+```python 
+
+import autocomplete
+
+autocomplete.run_server()
+
+#output
+Bottle v0.12.8 server starting up (using WSGIRefServer())...
+Listening on http://localhost:8080/
+Hit Ctrl-C to quit.
+
+```
+
+Now head over to http://localhost:8080/the/bo
+
+```
+http://localhost:8080/the/bo
+#output
+{"body": 149, "box": 24, "bottom": 32, "boy": 46, "borzois": 16, "bodies": 13, "bottle": 13, "bones": 122, "book": 14, "bone": 175}
+
+http://localhost:8080/the/bos
+#output
+{"boscombe": 11, "boston": 7, "boss": 1, "bosom": 5, "bosses": 4}
+```
+---
+
 ## Explain like I'm 5
 
 No. I'm explaining this like you're 5. I know you're not *5* , you guys... Chris, stop jumping on your sister's back!
