@@ -5,7 +5,7 @@
 
 ## Explain like I'm 5
 
-No. I'm explaining this like you're 5. I know you're not *5* , you guys... Chris, stop doing handstands on your sister's back!
+No. I'm explaining this like you're 5. I know you're not *5* , you guys... Chris, stop jumping on your sister's back!
 
 Ok, so I'm saying, *imagine I'm 5!* 
 
@@ -15,21 +15,40 @@ Forget the *I'm 5* part.
 
 Imagine a giant collection of books. 
 
-For example, all the Harry Potter and Hunger Games books put together. 
+For example, all the Harry Potter and Hunger Games novels put together. 
 
-What if I asked you to go through all the words in all those books. 
+What if I asked you to go through all the pages and all the words in those pages? 
 
-Don't actually *read* the books. Go through, beginning to end, and notice each word; for every new word you see, write it down, and put a "1" next to it.
+Now, I'm not saying to actually *read* the books. You know, just go through, beginning to end, and notice each word. For every new word you see, write it down, and put a "1" next to it, and everytime you see it again, add "1" more to the previous number. 
 
-Continue doing this: keep count of how many times you see every word.
+So basically I'm asking y'all to keep count of how many times a word comes up.
 
-You start with *Harry Potter and the Sorcerer's Stone*:
+Say you start with *Harry Potter and the Sorcerer's Stone*:
 
     Mr. and Mrs. Dursley of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much...
+    
+And imagine that you're on the 5th word. This or something close to this is what you're going for:
 
-... and because you got bored with English from the east side of the Atlantic, you switched to English from the west and began doing the same with The Hunger Games:
+    Mr.     -> 1
+    and     -> 1
+    Mrs.    -> 1
+    Dursley -> 1
+    of      -> 1
+
+
+Or if you're a *wannabe-Harry-Potter* fan, ah I'm just kidding!   
+
+If you started with The Hunger Games:
 
     When I wake up, the other side of the bed is cold...
+
+By the sixth word you have:
+
+    When  -> 1
+    I     -> 1
+    wake  -> 1
+    up    -> 1
+    the   -> 1
 
 You have a long day ahead of you...
 
@@ -37,7 +56,9 @@ You have a long day ahead of you...
 
 *1,105,285 words later* 
 
-Now that you're done tallying up all those words, you decide to order all these words by the *number of times you've seen them* starting from **highest** to **lowest**. 
+Now that you're done tallying up all those words, why not order all these words by the *number of times you've seen them*? 
+
+Just imagine youstarting from **highest** to **lowest**.
 
 See you next week!
 
@@ -63,7 +84,7 @@ Back so soon? You might have something like this:
 
 Those were the most common words. 
 
-Now on the lower end you'll find your words appearing not as often...
+Now on the *less-frequent* end you'll find your words appearing not as often...
 
     ... 29137 words later.
     'przazdziecka' -> 1
@@ -77,6 +98,7 @@ Now on the lower end you'll find your words appearing not as often...
     'expands'      -> 1
     'revolvers'    -> 1
 
+Yeah Chris? Oh, 'what does lez freken ten' mean? Um, so it means something like: *you won't see it that often*
 
 Now what if I asked you to help me find this word I'm looking for? And I know it starts with the letters: 'th'.
 
@@ -115,9 +137,9 @@ This you can do much faster! A blazing 5 minutes! Well you had to go through 291
 
 *I scan through the first 10 words.* Oh, I just remembered that the next letter is 'r'.
 
-You start filtering out some more words.
+*You start filtering out some more words.*
 
-*10 seconds later*
+*10 seconds later.*
 
     'third'      -> 239
     'thirty'     -> 123
@@ -130,7 +152,7 @@ You start filtering out some more words.
     'thirtieth'  -> 3
     'thirties'   -> 2
 
-Aha, 'thirdly' was the word I was looking for! What, you never heard of the word "thirdly" before?
+Aha, 'thirdly' was the word I was looking for! What, you never heard of the word "thirdly" before? 
 
 Now you might be saying to yourself, "*that's pretty cool!*", and you're right! 
 
@@ -144,11 +166,17 @@ It's like all we do is talk, write, and think with *words*. I mean, how lame, I 
 
 Ugh! I hate words! 
 
-*Whoah, wait a minute! It's alright! Let's relax for a minute.* 
+*Whoah, wait a minute! That was not cool of me! Let's relax for a minute.* 
 
-Let's try to give an imaginary hug to our word-factory in our brains. 
+Let's try to give an imaginary hug to our word-factory in our brains. That part of our brain works so hard, even when we don't ask it to, aww how nice of of brain to do that. Not! 
 
-How about this: try to think about *what* the next sentence coming out of our mouth *will be*\*.
+Well I guess I should say, sometimes it's not so nice for our brains to distract us, especially when we have homework or real-world problems, like adult-homework. 
+
+How about this: try to think about *what* the next sentence coming out of our own mouths *will be*\*. 
+
+Now if you're thinking about what will be coming out of my mouth, or out of your mouth, or your mouth, or your mouth, or your mouth, you're doing it wrong! 
+
+Think about *what* the next sentence coming out of *your own* mouth.
 
 ...
 
@@ -186,7 +214,7 @@ Of course you could have! I bet you spent a millisecond thinking about whether o
 
 I *know* because I thought about using that word too!
 
-I can remember the first time I heard (or read) *guaiacol* like it was yesterday. I read it in some funky article on the internet. It was in a list of words that don't appear too often in the English language.
+I can remember the first time I heard (or read) *guaiacol* like it was yesterday. I read it in some funky article on the internet. I found the in a list of words that don't appear too often in the English language.
 
 After I read it, I was able to fit *guaiacol* nicely into that part of my brain where I... uhh.. was... able... uhh...
 
@@ -194,13 +222,13 @@ Oh, you *know*, that place in my brain where I get to choose whether I want to s
 
 ...
 
-Ok, so clearly I'm no brain-ician, and that may or may not be the way our brain works. But that sounds like a pretty darn good way of suggesting the next word I'm trying to *type*. 
+Ok, so clearly I'm no brain-ician, and that may or may not be the way our brain works - actually, it's probably super super wrong. Even though that idea is probably wrong, the idea itself sounds like a pretty darn good way of suggesting the next word I'm trying to *type*. 
 
 Hey, wait a minute. Where have we seen this before? 
 
-*You google where you migh...* Hey! I found where I saw this before!
+*You google "where you migh..."* Hey! This is where I saw this!
 
-Most search engines of course! 
+Most search engines of course can do this too you guys.
 
 Oh, silly Google and Microsoft and Yahoo and other giant multi-dollar-naire companies keeping such a cool and useful idea away from us, lol rofl rite!? >.< 
 
@@ -222,9 +250,9 @@ Well, turns out you started working on that problem however many minutes it took
 
 And we're almost done!
 
-Where did we leave off before going off into a tangent us humans should avoid at all cost? 
+Where were we, like before I got all distracted? 
 
-About 15 sentences ago: "...whether I want to say *the apple*, *the automobile*, *the austronaut*, etc."
+Turns out 15 sentences ago: "...whether I want to say *the apple*, *the automobile*, *the austronaut*, etc."
 
 What if you had a way to count the number of times you've heard "apple" said after the word "the"? 
 
@@ -266,9 +294,11 @@ At this point, you can't even call that length of time a *second*. But in that l
     'history' -> 56
     'heart'   -> 55
 
-And brain of yours did this realllllyyyyyy fast. Faster than Google, Bing, Yahoo and any other company can ever hope to beat. 
+And that brain you got did this realllllyyyyyy fast. Faster than Google, Bing, Yahoo and any other company can ever hope to beat. And it did this without even asking for your permission. 
 
-~~~~
+---
+
+###Afterword
 
 notes: \*I have to give a shout out to [Sam Harris](https://twitter.com/SamHarrisOrg) for wonderfully [putting into words](https://www.youtube.com/watch?v=pCofmZlC72g#t=1144) what I've borrowed and slightly adapted for this writing. 
 
@@ -280,4 +310,3 @@ I can't describe it because I literally *can't* describe it, that is, without me
 
 Warning! Second article about this exact thing, only expressed differently, coming soon! Oh and the code too, that is if someone hasn't gotten to translating the above article to code before I can get to uploading the project :P
 
-~~~~
