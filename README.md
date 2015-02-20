@@ -3,6 +3,10 @@
 
 ---
 
+## To install:
+
+    pip install autocomplete
+
 ## How to use:
 
 ```python
@@ -73,6 +77,12 @@ http://localhost:8080/the/bos
 {"boscombe": 11, "boston": 7, "boss": 1, "bosom": 5, "bosses": 4}
 ```
 ---
+
+---
+
+Edit*: *To avoid confusion, I wrote this in a the form a letter to my younger siblings.* 
+
+*For Chris, Christine, Mel, and Cat*
 
 ## Explain like I'm 5
 
