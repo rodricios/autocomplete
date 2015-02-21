@@ -1,6 +1,11 @@
 *Autocomplete* or: How I learned to stop spelling and love our AI overlords
 ===
 
+If you end up finding this project and its writeups, [ELI5](#explain-like-im-5) & [ELI!5](#if-youre-not-5), informative, please consider [tweeting it to your friends and family](https://twitter.com/intent/tweet?text=%23ArtificialIntelligence%20%26%20%23machinelearning%20shouldn%27t%20be%20so%20scary-sounding%20and%20ill-defined.%20https%3A%2F%2Fgithub.com%2Frodricios%2Fautocomplete). 
+
+It's my belief that it'd do everyone a great service if both the barrier to entry and the intimidating-sounding, ill-defined nomenclature "Artificial Intelligence" & "Machine Learning" was taken off its pedestal. 
+
+There's a ton of people wanting to learn or at the very least wanting to better understand what's so cool about this stuff; conversefly, there's probably a lot of people who'd not like to think that robots will be taking people's jobs, or worse. 
 
 
 ## Skip to:
