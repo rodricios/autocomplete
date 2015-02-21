@@ -1,9 +1,17 @@
 *Autocomplete* or: How I learned to stop spelling and love our AI overlords
 ===
 
+
+
+## Skip to:
+
+* [How to's](#how-to-install)
+* [ELI5](#explain-like-im-5)
+* [If you're not 5](#if-youre-not-5)
+
 ---
 
-## To install:
+## How to install:
 
     pip install autocomplete
 
@@ -50,7 +58,7 @@ models.train_models('some giant string of text')
 
 ```
 
-Want to run it as a server (bottlepy required)
+Want to run it as a server (bottlepy required)?
 
 ```python 
 
@@ -78,15 +86,12 @@ http://localhost:8080/the/bos
 ```
 ---
 
----
+[*This work is dedicated to my siblings*](#note-1)
 
-Edit*: *To avoid confusion, I wrote this in a the form a letter to my younger siblings.* 
+## Explain like I'm 5[*](#note-1)
 
-*For Chris, Christine, Mel, and Cat*
 
-## Explain like I'm 5
-
-No. I'm explaining this like you're 5. I know you're not *5* , you guys... Chris, stop jumping on your sister's back!
+No. I'm explaining this like you're 5. I know you're not *5* , *you guys... Chris, stop jumping on your sister's back*!
 
 Ok, so I'm saying, *imagine I'm 5!* 
 
@@ -100,7 +105,7 @@ For example, all the Harry Potter and Hunger Games novels put together.
 
 What if I asked you to go through all the pages and all the words in those pages? 
 
-Now I'm not asking you four to actually *read* the books. You know, just go through, beginning to end, and notice each word.
+Now I'm not asking you *four* to actually *read* the books. You know, just go through, beginning to end, and notice each word.
 
 For every new word you see, write it down, and put a "1" next to it, and everytime you see a word *again*, add "1" more to the previous number. 
 
@@ -147,8 +152,6 @@ You have a long day ahead of you...
 
 Now that you're done tallying up all those words, why not order all these words by the *number of times you've seen them*? 
 
-Just imagine youstarting from **highest** to **lowest**.
-
 See you next week!
 
 ...
@@ -173,7 +176,7 @@ Back so soon? You might have something like this:
 
 Those were the most common words. 
 
-Now on the *less-frequent* end you'll find your words appearing not as often...
+Now on the *less-frequent* end, you'll find your words appearing not as often...
 
     ... 29137 words later.
     'przazdziecka' -> 1
@@ -187,11 +190,19 @@ Now on the *less-frequent* end you'll find your words appearing not as often...
     'expands'      -> 1
     'revolvers'    -> 1
 
-Yeah Chris? Oh, 'what does lez freken ten' mean? Um, so it means something like: *you probably won't hear or read that word very often.*
+Yeah Chris? Oh, 'what does *lez freekend*' mean? Um, so it means something like: *you probably won't hear or read that word very often.*
 
 Now what if I asked you to help me find this word I'm looking for? And I know this word starts with the letters: 'th'.
 
-This I know you can do much faster! A blazing 5 minutes! IYou did have to go through 29157 unique words after all!
+*This*, I know, you can do much faster! 
+
+...
+
+*5 minutes later!*
+
+...
+
+You did have to go through 29157 unique words after all!
 
 
     'the'  -> 80030
@@ -207,7 +218,7 @@ This I know you can do much faster! A blazing 5 minutes! IYou did have to go thr
     ... 229 words more... 
     
 
-239 words, still kind of lot though huh? And you know your brother, he's too lazy to do this work *by hand* (*cough* programming  *cough*) ;) 
+239 words, still kind of lot though huh? And you know your big brother, he's too lazy to do this work *by hand* (*cough* programming  *cough*) ;) 
 
 So the word I'm looking for is on the tip of my tongue. I think the next letter is "i".
 
@@ -228,7 +239,7 @@ So the word I'm looking for is on the tip of my tongue. I think the next letter 
 
 *I scan through the first 10 words.* Oh, I just remembered that the next letter is 'r'.
 
-*You start filtering out some more words.*
+*You start taking out even more words.*
 
 *10 seconds later.*
 
@@ -263,7 +274,7 @@ Let's try to give an imaginary hug to our word-factory in our brains. That part 
 
 Well I guess I should say, sometimes it's not so nice for our brains to distract us, especially when we have homework or other, real-world, problems like adult-homework. 
 
-How about this: try to think about *what* the next sentence coming out of our own mouths *will be*\*. 
+How about this: try to think about *what* the next sentence coming out of our own mouths *will be*[\*](#note-2). 
 
 Now if you're thinking about what will be coming out of my mouth, or out of your mouth, or your mouth, or your mouth, or your mouth, you're doing it wrong! (to readers who aren't one of my 4 younger siblings, that's how many I got).
 
@@ -281,7 +292,7 @@ Still pretty hard huh? If you think this part is easy, I'm going to have to say 
 
 If you thought about it, and you thought it was pretty darn hard to give a *good and honest* reason as to *why* it is you chose the word you chose, let's bring out a word you guys might not understand: *probability*.
 
-If you feel like you don't *get* what the word means, sure you do! Just use the word "probably" in one of your sentences, but make it kinda makes sense. 
+If you feel like you don't *get* what the word means, sure you do! Just use the word "probably" in one of your sentences, but but try to makes some sense. 
 
 What do I mean? Well, let's just consider the English language. Like most other things, the English language has rules. 
 
@@ -345,7 +356,9 @@ Well, turns out you started working on that problem however many minutes it took
 
 And we're almost done!
 
-Where were we, like before I got all distracted? 
+Where were we? Like before I got all distracted? 
+
+...
 
 Turns out 15 sentences ago: "...whether I want to say *the apple*, *the automobile*, *the austronaut*, etc."
 
@@ -370,13 +383,15 @@ What if you had the time to think about every possible word that you've ever hea
     
     ... 9331 more words...
 
-Not impressed with your brain yet? Let's continue this little thought experiment a little further.
+Not impressed with your brain yet? Let's continue this little thought experiment further.
 
-Imagine, you just said "the", and you could put pause after the first *letter* of the next word. 
+Imagine that you just said "the", and you could put pause after the first *letter* of the next word out of your mouth: "h". 
 
 Real quick, think of the shortest amount of time you can think of. Think of the shortest *second* you can think of. Now shorter than that too. 
 
 At this point, you can't even call that length of time a *second*. But in that length of time, your brain may have just done this:
+
+    Every word you've ever heard coming after the word "the":
 
     'house'   -> 284
     'head'    -> 117
@@ -391,17 +406,71 @@ At this point, you can't even call that length of time a *second*. But in that l
 
 And that brain you got did this realllllyyyyyy fast. Faster than Google, Bing, Yahoo and any other company can ever hope to beat. And your brain did this without even asking for your permission. I think our brains are trying to control us you guys, oh no!
 
+
+##If you're not 5
+
+The basic idea is this:
+
+Assume you have a large collection of queries merged into a single string. 
+
+Start by transforming that string into a list of words (AKA *ngrams of word-legth*), and also (but not required) normalize each word ('The' -> 'the').
+
+At this point you can start "predict" the "final state" of a word-in-progress. But consider the case where a user types in some query box:
+
+    "The th"
+
+And he intends to write:
+
+    "The third"
+    
+With the above predictive model, you'll be suggesting something like: 
+
+    [
+        ('the', 80030),
+        ('they', 3938),
+        ('there', 2972),
+        ...
+    ]
+
+This explains one specific type of predictive model, which can be written as P(word), and you've just seen the pitfalls of using **just** this model.
+
+Now for the next word, ask yourself, what's the probability that I'm going to type the word "apple" given that I wrote "tasty"?
+
+In machine learning and AI books, you'll be presented *Conditional Probability* with the following equation:
+
+    P(word A and word B) = P(word B | word A) * P(word A)
+
+That equation addresses the problem that I mentioned. 
+
+We've handled P(wordA) already. 
+
+To handle P(word B | word A), which reads *probability of word A given word B *, I take a *literall* interpretation of the word "given", in that context, to mean the following: 
+
+*"word A" is the key pointing to a probability distribution representing all the words that follow "word A"*
+
+Once we can represent this second model, we can also apply the *filtering* step - given that we know more letters in the second word, we can zone in on more precise suggestions.
+
+
 ---
 
 ###Afterword
 
-notes: \*I have to give a shout out to [Sam Harris](https://twitter.com/SamHarrisOrg) for wonderfully [putting into words](https://www.youtube.com/watch?v=pCofmZlC72g#t=1144) what I've borrowed and slightly adapted for this writing. 
+notes: \*I have to give a shout out to [Sam Harris](https://twitter.com/SamHarrisOrg) for being, AFAIK, the first person or one of the firsts, in [wonderfully putting into words](https://www.youtube.com/watch?v=pCofmZlC72g#t=1144) what I've borrowed and slightly adapted for this writing. [I highly recommend his work](http://www.samharris.org/)
 
-Another shoutout to [Peter Norvig](http://norvig.com) for inspiring me and probably many others with what many will likely consider to be an almost full on copy paste of his [*How to Write a Spell Checker*](http://norvig.com/spell-correct.html)(! But I swear it's not! I actually I think I may have out-Norvig'ed Peter Norvig when it comes to describing [conditional probability](http://en.wikipedia.org/wiki/Conditional_probability): P(wordA & wordB) = P(wordB | wordA)\*P(wordA)
+Another shoutout to [Peter Norvig](http://norvig.com) for inspiring me and probably many others with our own little "toy" programs. His *Occam's Razor* approach to problem solving will likely cause some confusion as it may appear that my work is an almost full on copy-paste of his [*How to Write a Spell Checker*](http://norvig.com/spell-correct.html)!
 
-And another one to Rob Renaud's [Gibberish Detector](https://github.com/rrenaud/Gibberish-Detector). I, out of pure chance, ran into his project some time after running into Norvig's article. I can't describe *how* much it helped solidify what the heavy hitters of "AI" consider to be introductory material. 
+But I swear it's not! I actually I think I may have out-Norvig'ed Peter Norvig when it comes to describing [conditional probability](http://en.wikipedia.org/wiki/Conditional_probability): P(wordA & wordB) = P(wordB | wordA)\*P(wordA)
 
-I can't describe it because I literally *can't* describe it, that is, without me using "likely" and "probably" in what would have likely been every sentence, but who really knows? 
+And another one to Rob Renaud's [Gibberish Detector](https://github.com/rrenaud/Gibberish-Detector). I, out of pure chance, ran into his project some time after running into Norvig's article. I can't describe *how much it helped* to intuitively understand what the heavy hitters of "AI" consider to be introductory material; this was greatly needed b/c at the time, I felt overwhelmed by my own desire to really understand this area, and everything else going on. 
 
-Warning! Second article about this exact thing, only expressed differently, coming soon! Oh and the code too, that is if someone hasn't gotten to translating the above article to code before I can get to uploading the project :P I'm trying to get the kinks out of here and the code so it's simple, duh!
+I do have a second article about this exact thing, only expressed differently (audience is non-programming), and it may or may not be posted soon! ~~Oh and the code too, that is if someone hasn't gotten to translating the above article to code before I can get to uploading the project :P I'm trying to get the kinks out of here and the code so it's simple, duh!~~
 
+I dedicate this work to my sisters, Cat, Melissa and Christine, and my favorite brother, Christian :) 
+
+####note 1
+
+*To avoid confusion, I wrote this section in the form of a letter to my younger siblings; their initials combined make mc<sup>3</sup>* 
+
+####note 2
+
+*I'm borrowing, what I consider, [one of the most beautiful thought experiments I've ever heard trying to describe one's self](https://www.youtube.com/watch?v=pCofmZlC72g#t=1144). I'm a big fan of Sam Harris's work. Highly recommend!
