@@ -1,7 +1,7 @@
 *Autocomplete* or: How I learned to stop spelling and love our AI overlords
 ===
 
-If you end up finding this project and its writeups, [ELI5](#explain-like-im-5) & [ELI!5](#if-youre-not-5), informative, please consider [tweeting it to your friends and family](https://twitter.com/intent/tweet?text=%23ArtificialIntelligence%20%26%20%23machinelearning%20shouldn%27t%20be%20so%20scary-sounding%20and%20ill-defined.%20https%3A%2F%2Fgithub.com%2Frodricios%2Fautocomplete%23skip-to). 
+If you end up finding this project and its writeups, [ELI5](#explain-like-im-5) & [ELI!5](#if-youre-not-5), informative, please consider [tweeting it to your friends and family](https://twitter.com/intent/tweet). 
 
 It's my belief that it'd do everyone a great service if both the barrier to entry and the intimidating-sounding, ill-defined nomenclature "Artificial Intelligence" & "Machine Learning" was taken off its pedestal. 
 
@@ -93,7 +93,7 @@ http://localhost:8080/the/bos
 ```
 ---
 
-[*This work is dedicated to my siblings*](#note-1)
+[*This work is dedicated to my siblings*](#note-1), 
 
 ## Explain like I'm 5[*](#note-1)
 
@@ -102,9 +102,7 @@ No. I'm explaining this like you're 5. I know you're not *5* , *you guys... Chri
 
 Ok, so I'm saying, *imagine I'm 5!* 
 
-Oh, that was easy now huh?
-
-Forget the *I'm 5* part. 
+Oh, that was easy now huh? Let's just forget the *I'm 5* part. 
 
 Imagine a giant collection of books. 
 
@@ -139,7 +137,7 @@ Or if you're a *wannabe-Harry-Potter* fan, ah I'm just kidding!
 
 If you started with *the-book-that-must-not-be-named* - I know you guys won't get it, but persons my age will :)
 
-But I'm sorry, so you started with *The Hunger Games*:
+Alright! So you started with *The Hunger Games*:
 
     When I wake up, the other side of the bed is cold...
 
@@ -163,7 +161,7 @@ See you next week!
 
 ...
 
-Back so soon? You might have something like this:
+Back so soon? You should have gotten something like this:
 
     psst*, remember, the format is:
      word -> # of times the word appears
@@ -201,7 +199,7 @@ Yeah Chris? Oh, 'what does *lez freekend*' mean? Um, so it means something like:
 
 Now what if I asked you to help me find this word I'm looking for? And I know this word starts with the letters: 'th'.
 
-*This*, I know, you can do much faster! 
+I'm pretty sure you guys can do this much faster! 
 
 ...
 
@@ -209,7 +207,7 @@ Now what if I asked you to help me find this word I'm looking for? And I know th
 
 ...
 
-You did have to go through 29157 unique words after all!
+Not bad! You only had to go through 29157 unique words after all!
 
 
     'the'  -> 80030
@@ -225,7 +223,7 @@ You did have to go through 29157 unique words after all!
     ... 229 words more... 
     
 
-239 words, still kind of lot though huh? And you know your big brother, he's too lazy to do this work *by hand* (*cough* programming  *cough*) ;) 
+239 words, still kind of lot though huh? And you know your big brother, he's too lazy to do this work *by hand* (*cough* program it up  *cough*) ;) 
 
 So the word I'm looking for is on the tip of my tongue. I think the next letter is "i".
 
@@ -277,23 +275,23 @@ Ugh! I hate words!
 
 *Whoah, wait a minute! That was not cool of me! Let's relax for a minute.* 
 
-Let's try to give an imaginary hug to our word-factory in our brains. That part of our brain works so hard, even when we don't ask it to. How nice of brain to do that. Not! 
+Let's try to give an imaginary hug to our word-factory in our brains. That part of our brain works so hard, even when we don't ask it to. How nice of our brain to do that. Not! 
 
-Well I guess I should say, sometimes it's not so nice for our brains to distract us, especially when we have homework or other, real-world, problems like adult-homework. 
+What I'm trying to is sometimes it's not so nice for our brains to distract us, especially when we have homework or other, real-world, problems like adult-homework. 
 
-How about this: try to think about *what* the next sentence coming out of our own mouths *will be*[\*](#note-2). 
+So how about this: let's try to think about *what* the next sentence coming out of our own mouths *will be*[\*](#note-2). 
 
-Now if you're thinking about what will be coming out of my mouth, or out of your mouth, or your mouth, or your mouth, or your mouth, you're doing it wrong! (to readers who aren't one of my 4 younger siblings, that's how many I got).
+Now if you're thinking about what will be coming out of my mouth, or out of your mouth, or your mouth, or your mouth, or your mouth, you're doing it wrong! (to readers who aren't one of my 4 younger siblings, that's how many I have).
 
-Think about *what* the next sentence coming out of *your own* mouth might end up being.
+Try your best to think about *what* the next sentence coming out of *your own* mouth will be.
 
 ...
 
 Did you decide on your sentence? Good!
 
-What if I asked you to give me just a few reasons explaining *why* or *how* you chose the sentence you chose? 
+Now what if I asked you to give me two reasons explaining *why* and *how* you chose the sentence you chose? 
 
-Wait, I can't even do that. Let's make it easier on ourselves and explain *why* and *how* we chose just the first *word*.
+Wait, I can't even do that! Let's make it easier on ourselves and explain *why* and *how* we chose the first *word*.
 
 Still pretty hard huh? If you think this part is easy, I'm going to have to say "sorry" and ask you guys to try thinking about it maybe just one more time; this part isn't so easy to ask for help with either :/ 
 
@@ -333,7 +331,7 @@ Oh, you *know*, that place in my brain where I get to choose whether I want to s
 
 ...
 
-Ok, so clearly I'm no brain-ician, and that may or may not be the way our brain works - actually, it's probably super super unlikely. 
+Ok, so clearly I'm no brainician, and that may or may not be the way our brain works - actually, it's probably super super unlikely. 
 
 But even though that idea is probably wrong, the idea itself sounds like a pretty darn good way of suggesting the next word or words somebody is trying to *type*. 
 
@@ -418,9 +416,13 @@ And that brain you got did this realllllyyyyyy fast. Faster than Google, Bing, Y
 
 The basic idea is this:
 
-Assume you have a large collection of queries merged into a single string. 
+Assume you have a large collection of Enlish-understandable text merged into a single string. 
 
 Start by transforming that string into a list of words (AKA *ngrams of word-legth*), and also (but not required) normalize each word ('The' -> 'the').
+
+Once you have a normalized list of words, you can start building a frequency distribution measuring the frequency of each word.
+
+...
 
 At this point you can start "predict" the "final state" of a word-in-progress. But consider the case where a user types in some query box:
 
@@ -476,7 +478,7 @@ I dedicate this work to my sisters, Cat, Melissa and Christine, and my favorite 
 
 ####note 1
 
-*To avoid confusion, I wrote this section in the form of a letter to my younger siblings; their initials combined make mc<sup>3</sup>* 
+*To avoid confusion, I wrote this section in the form of a letter to my younger siblings* 
 
 ####note 2
 
