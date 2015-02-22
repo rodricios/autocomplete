@@ -1,7 +1,7 @@
 *Autocomplete* or: How I learned to stop spelling and love our AI overlords
 ===
 
-Update (2/22/2015): Please read the [tl;dr](#tldr) and my ['motivation*](#motivation) :)
+Update (2/22/2015): Please read the [tl;dr](#tldr) and my ['motivation'](#motivation) :)
 
 If you end up finding this project and its writeups, [ELI5](#explain-like-im-5) & [ELI!5](#if-youre-not-5), informative, please consider [tweeting it to your friends and family](https://twitter.com/intent/tweet). 
 
@@ -139,20 +139,27 @@ More on this below.
 
 ```
 
-Textbooks where the above code has been expressed:
+Textbooks, and locations therein, where the concept-in-practice has been expressed:
 
 I. [Intro to Statistical Natural Language Processing](http://ics.upjs.sk/~pero/web/documents/pillar/Manning_Schuetze_StatisticalNLP.pdf) - Manning, Schütze, 1999
-  a. frequency distribution showing the most common words and frequencies in *Tom Sawyer*, pg. 21
-  b. conditional probability definition expressed in page 42 - section 2.1.2
-  c. the intuition for *frequency* distributions found in pg. 153 (provided in the context of finding [*Collocations*](http://en.wikipedia.org/wiki/Collocation))
+  
+    a. frequency distribution showing the most common words and frequencies in *Tom Sawyer*, pg. 21
+  
+    b. conditional probability definition expressed in page 42 - section 2.1.2
+  
+    c. the intuition for *frequency* distributions found in pg. 153 (provided in the context of finding [*Collocations*](http://en.wikipedia.org/wiki/Collocation))
   
 II. [Probabilistic Graphical Models](http://mitpress.mit.edu/books/probabilistic-graphical-models) - Kohler, Friedman, 2009
-  a. conditional probability definition found on pg. 18 (hilariously and coincidentally found in section 2.1.2.1)
+ 
+    a. conditional probability definition found on pg. 18 (hilariously and coincidentally found in section 2.1.2.1)
   
 III. [Artificial Intelligence - A Modern Approach](http://aima.cs.berkeley.edu) - Russell, Norvig, 3rd. ed. 2010
-  a. conditional probability concept explained in pg. 485
-  b. the "language" (I take to mean "intuition" for asserting things in the probabilistic sense) pg. 486
-  c. the notion of "conditioning" found in pg. 492-494
+  
+    a. conditional probability concept explained in pg. 485
+  
+    b. the "language" (I take to mean "intuition" for asserting things in the probabilistic sense) pg. 486
+  
+    c. the notion of "conditioning" found in pg. 492-494
 
 ##Motivation
 
