@@ -97,6 +97,19 @@ http://localhost:8080/the/bos
 
 ## Explain like I'm 5[*](#note-1)
 
+*Warning! This explanation is literally intended for young kids - I'm actually trying to see if these concepts can be explained to an audience unaware of the nomenclature used within the statistical [nlp](http://en.wikipedia.org/wiki/Natural_language_processing) and other machine learning fields. For example, my 7, 9, 11, 14 y.o. siblings, and basically anyone else who's ever read a story to a child - they would be a part of the target audience. 
+
+If you've found this readable and informative, please consider putting on the goofiest face and reading this to your kids, if you have any :) If you do, please send me your thoughts on the experience. 
+
+I'm only interested in lowering the barrier to entry. I should have included this note since the beginning (sorry to those who undoubtedly left with a bad taste in their mouths).
+
+You can contact me at rodrigopala91@gmail.com
+
+Thanks for reading,
+
+Rodrigo
+
+## ELI5
 
 No. I'm explaining this like you're 5. I know you're not *5* , *you guys... Chris, stop jumping on your sister's back*!
 
@@ -477,6 +490,8 @@ I do have a second article about this exact thing, only expressed differently (a
 I dedicate this work to my sisters, Cat, Melissa and Christine, and my favorite brother, Christian :) 
 
 ####note 1
+
+[go back](#explain-like-im-5)
 
 *To avoid confusion, I wrote this section in the form of a letter to my younger siblings* 
 
