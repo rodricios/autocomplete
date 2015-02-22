@@ -1,6 +1,8 @@
 *Autocomplete* or: How I learned to stop spelling and love our AI overlords
 ===
 
+Update (2/22/2015): Please read the [tl;dr](#tldr) and my ['motivation*](#motivation) :)
+
 If you end up finding this project and its writeups, [ELI5](#explain-like-im-5) & [ELI!5](#if-youre-not-5), informative, please consider [tweeting it to your friends and family](https://twitter.com/intent/tweet). 
 
 It's my belief that it'd do everyone a great service if both the barrier to entry and the intimidating-sounding, ill-defined nomenclature "Artificial Intelligence" & "Machine Learning" was taken off its pedestal. 
@@ -13,8 +15,11 @@ Cheers,
 ## Skip to:
 
 * [How to's](#how-to-install)
+* [tl;dr?](#tldr)
+* [Motivation](#motivation)
 * [ELI5](#explain-like-im-5)
 * [If you're not 5](#if-youre-not-5)
+
 
 ---
 
@@ -93,7 +98,71 @@ http://localhost:8080/the/bos
 ```
 ---
 
-[*This work is dedicated to my siblings*](#note-1), 
+##[tl;dr](https://github.com/rodricios/autocomplete/blob/master/autocomplete/models.py)
+
+The following code excerpt is my interpretation of a series of lessons/concepts expressed in a number of different books.
+
+The unifying concept can be said to be [conditional probability](http://en.wikipedia.org/wiki/Conditional_probability):
+
+    P(A , B) = P(B | A) * P(A)
+
+Which can read as saying:
+
+    The probability of A and B occuring is equal to the probability of B occuring, given that A has occured
+
+More on this below.
+
+```python
+    
+    # "preperation" step
+    # for every word in corpus, normalize ('The' -> 'the'), insert to list
+    WORDS = helpers.re_split(corpus)
+
+    # first model -> P(word)
+    # Counter constructor will take a list of elements and create a frequency distribution (histogram)
+    WORDS_MODEL = collections.Counter(WORDS)
+
+    # another preperation step
+    # [a,b,c,d] -> [[a,b], [c,d]]
+    WORD_TUPLES = list(helpers.chunks(WORDS, 2))
+
+    # second model -> P(next word | prev. word) 
+    # I interpret "..| prev. word)" as saying "dictionary key 
+    # leading to seperate and smaller (than WORDS_MODEL) freq. dist. 
+    WORD_TUPLES_MODEL = {first:collections.Counter() for first, second in WORD_TUPLES}
+
+    for prev_word, next_word in WORD_TUPLES:
+        # this is called the "conditioning" step where we assert
+        # that the probability space of all possible "next_word"'s
+        # is "conditioned" under the event that "prev_word" has occurred
+        WORD_TUPLES_MODEL[prev_word].update([next_word])
+
+```
+
+Textbooks where the above code has been expressed:
+
+I. [Intro to Statistical Natural Language Processing](http://ics.upjs.sk/~pero/web/documents/pillar/Manning_Schuetze_StatisticalNLP.pdf) - Manning, Schütze, 1999
+  a. frequency distribution showing the most common words and frequencies in *Tom Sawyer*, pg. 21
+  b. conditional probability definition expressed in page 42 - section 2.1.2
+  c. the intuition for *frequency* distributions found in pg. 153 (provided in the context of finding [*Collocations*](http://en.wikipedia.org/wiki/Collocation))
+  
+II. [Probabilistic Graphical Models](http://mitpress.mit.edu/books/probabilistic-graphical-models) - Kohler, Friedman, 2009
+  a. conditional probability definition found on pg. 18 (hilariously and coincidentally found in section 2.1.2.1)
+  
+III. [Artificial Intelligence - A Modern Approach](http://aima.cs.berkeley.edu) - Russell, Norvig, 3rd. ed. 2010
+  a. conditional probability concept explained in pg. 485
+  b. the "language" (I take to mean "intuition" for asserting things in the probabilistic sense) pg. 486
+  c. the notion of "conditioning" found in pg. 492-494
+
+##Motivation
+
+Similar to the motivation behind [eatiht](https://github.com/rodricios/eatiht#motivation), I found that it took far too long to find a palpable theory-to-application example of what amounts to more than a 500 pages of words across 3 books, each spanning a large index of, in certain cases, *counter-productive* nomenclature; read the [light criticisms (with the obvious preemptive apologies to those he knows will end up making 'it' about 'themselves')](http://www.reddit.com/r/MachineLearning/comments/2fxi6v/ama_michael_i_jordan/ckep3z6) made by Michael I. Jordan on the matter (he was recently named [#2 machine learning expert "we need to know" on dataconomy.com](http://dataconomy.com/10-machine-learning-experts-you-need-to-know/)). 
+
+You can find similar thoughts being expressed [**in an article from 2008 (updated 2009)**](http://brenocon.com/blog/2008/12/statistics-vs-machine-learning-fight/) by [Brennan O'Connor](http://brenocon.com)
+
+---
+
+[*This work is dedicated to my siblings*](#note-1).
 
 ## Explain like I'm 5[*](#note-1)
 
