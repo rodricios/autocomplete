@@ -1,16 +1,13 @@
 *Autocomplete* or: How I learned to stop spelling and love our AI overlords
 ===
 
-Update (2/22/2015): Please read the [tl;dr](#tldr) and my ['motivation'](#motivation) :)
+A practical guide to implementing "autocomplete" yourself! It follows the
+sometimes misunderstood principles of conditional probability distributions
+and the generalized Hidden Markov Model (HMM).
 
-If you end up finding this project and its writeups, [ELI5](#explain-like-im-5) & [ELI!5](#if-youre-not-5), informative, please consider [tweeting it to your friends and family](https://twitter.com/intent/tweet). 
+Fun fact: Your iPhone's "autocomplete" was implemented using a HMM! Plus the
+extra stuff it chose to [sue Samsung for](http://www.cnet.com/news/us-patent-office-rejects-apple-autocomplete-patent-used-against-samsung/).
 
-It's my belief that it'd do everyone a great service if both the barrier to entry and the intimidating-sounding, ill-defined nomenclature "Artificial Intelligence" & "Machine Learning" was taken off its pedestal. 
-
-There's a ton of people wanting to learn or at the very least wanting to better understand what's so cool about this stuff; conversefly, there's probably a lot of people who'd not like to think that robots will be taking people's jobs, or worse. 
-
-Cheers,
-[@rodricios](http://twitter.com/rodricios)
 
 ## Skip to:
 
@@ -36,7 +33,7 @@ from autocomplete import autocomplete, models
 # I use Peter Norvigs big.txt (http://norvig.com/big.txt) to create the predictive models
 models.load_models()
 
-# imagine writing "the b" 
+# imagine writing "the b"
 autocomplete.predict('the','b')
 
 [('blood', 204),
@@ -57,7 +54,7 @@ autocomplete.predict('the','bo')
  ('bottom', 32),
  ('box', 24),
  ...]
- 
+
 ```
 
 If you have your own language model in the form described in [ELI5](#explain-like-im-5), then use the *models* submodule to call the training method:
@@ -72,7 +69,7 @@ models.train_models('some giant string of text')
 
 Want to run it as a server (bottlepy required)?
 
-```python 
+```python
 
 import autocomplete
 
@@ -113,7 +110,7 @@ Which can read as saying:
 More on this below.
 
 ```python
-    
+
     # "preperation" step
     # for every word in corpus, normalize ('The' -> 'the'), insert to list
     WORDS = helpers.re_split(corpus)
@@ -126,9 +123,9 @@ More on this below.
     # [a,b,c,d] -> [[a,b], [c,d]]
     WORD_TUPLES = list(helpers.chunks(WORDS, 2))
 
-    # second model -> P(next word | prev. word) 
-    # I interpret "..| prev. word)" as saying "dictionary key 
-    # leading to seperate and smaller (than WORDS_MODEL) freq. dist. 
+    # second model -> P(next word | prev. word)
+    # I interpret "..| prev. word)" as saying "dictionary key
+    # leading to seperate and smaller (than WORDS_MODEL) freq. dist.
     WORD_TUPLES_MODEL = {first:collections.Counter() for first, second in WORD_TUPLES}
 
     for prev_word, next_word in WORD_TUPLES:
@@ -142,28 +139,28 @@ More on this below.
 Textbooks, and locations therein, where the concept-in-practice has been expressed:
 
 I. [Intro to Statistical Natural Language Processing](http://ics.upjs.sk/~pero/web/documents/pillar/Manning_Schuetze_StatisticalNLP.pdf) - Manning, Schütze, 1999
-  
+
     a. frequency distribution showing the most common words and frequencies in *Tom Sawyer*, pg. 21
-  
+
     b. conditional probability definition expressed in page 42 - section 2.1.2
-  
+
     c. the intuition for *frequency* distributions found in pg. 153 (provided in the context of finding [*Collocations*](http://en.wikipedia.org/wiki/Collocation))
-  
+
 II. [Probabilistic Graphical Models](http://mitpress.mit.edu/books/probabilistic-graphical-models) - Kohler, Friedman, 2009
- 
+
     a. conditional probability definition found on pg. 18 (hilariously and coincidentally found in section 2.1.2.1)
-  
+
 III. [Artificial Intelligence - A Modern Approach](http://aima.cs.berkeley.edu) - Russell, Norvig, 3rd. ed. 2010
-  
+
     a. conditional probability concept explained in pg. 485
-  
+
     b. the "language" (I take to mean "intuition" for asserting things in the probabilistic sense) pg. 486
-  
+
     c. the notion of "conditioning" found in pg. 492-494
 
 ##Motivation
 
-Similar to the motivation behind [eatiht](https://github.com/rodricios/eatiht#motivation), I found that it took far too long to find a palpable theory-to-application example of what amounts to more than a 500 pages of words across 3 books, each spanning a large index of, in certain cases, *counter-productive* nomenclature; read the [light criticisms (with the obvious preemptive apologies to those he knows will end up making 'it' about 'themselves')](http://www.reddit.com/r/MachineLearning/comments/2fxi6v/ama_michael_i_jordan/ckep3z6) made by Michael I. Jordan on the matter (he was recently named [#2 machine learning expert "we need to know" on dataconomy.com](http://dataconomy.com/10-machine-learning-experts-you-need-to-know/)). 
+Similar to the motivation behind [eatiht](https://github.com/rodricios/eatiht#motivation), I found that it took far too long to find a palpable theory-to-application example of what amounts to more than a 500 pages of words across 3 books, each spanning a large index of, in certain cases, *counter-intuitive* nomenclature; read the [light criticisms](http://www.reddit.com/r/MachineLearning/comments/2fxi6v/ama_michael_i_jordan/ckep3z6) made by Michael I. Jordan on the matter (he was recently named [#2 machine learning expert "we need to know" on dataconomy.com](http://dataconomy.com/10-machine-learning-experts-you-need-to-know/)). 
 
 You can find similar thoughts being expressed [**in an article from 2008 (updated 2009)**](http://brenocon.com/blog/2008/12/statistics-vs-machine-learning-fight/) by [Brennan O'Connor](http://brenocon.com)
 
@@ -173,9 +170,9 @@ You can find similar thoughts being expressed [**in an article from 2008 (update
 
 ## Explain like I'm 5[*](#note-1)
 
-*Warning! This explanation is literally intended for young kids - I'm actually trying to see if these concepts can be explained to an audience unaware of the nomenclature used within the statistical [nlp](http://en.wikipedia.org/wiki/Natural_language_processing) and other machine learning fields. For example, my 7, 9, 11, 14 y.o. siblings, and basically anyone else who's ever read a story to a child - they would be a part of the target audience. 
+*Warning! This explanation is literally intended for young kids - I'm actually trying to see if these concepts can be explained to an audience unaware of the nomenclature used within the statistical [nlp](http://en.wikipedia.org/wiki/Natural_language_processing) and other machine learning fields. For example, my 7, 9, 11, 14 y.o. siblings, and basically anyone else who's ever read a story to a child - they would be a part of the target audience.
 
-If you've found this readable and informative, please consider putting on the goofiest face and reading this to your kids, if you have any :) If you do, please send me your thoughts on the experience. 
+If you've found this readable and informative, please consider putting on the goofiest face and reading this to your kids, if you have any :) If you do, please send me your thoughts on the experience.
 
 I'm only interested in lowering the barrier to entry. I should have included this note since the beginning (sorry to those who undoubtedly left with a bad taste in their mouths).
 
@@ -189,19 +186,19 @@ Rodrigo
 
 No. I'm explaining this like you're 5. I know you're not *5* , *you guys... Chris, stop jumping on your sister's back*!
 
-Ok, so I'm saying, *imagine I'm 5!* 
+Ok, so I'm saying, *imagine I'm 5!*
 
-Oh, that was easy now huh? Let's just forget the *I'm 5* part. 
+Oh, that was easy now huh? Let's just forget the *I'm 5* part.
 
-Imagine a giant collection of books. 
+Imagine a giant collection of books.
 
-For example, all the Harry Potter and Hunger Games novels put together. 
+For example, all the Harry Potter and Hunger Games novels put together.
 
-What if I asked you to go through all the pages and all the words in those pages? 
+What if I asked you to go through all the pages and all the words in those pages?
 
 Now I'm not asking you *four* to actually *read* the books. You know, just go through, beginning to end, and notice each word.
 
-For every new word you see, write it down, and put a "1" next to it, and everytime you see a word *again*, add "1" more to the previous number. 
+For every new word you see, write it down, and put a "1" next to it, and everytime you see a word *again*, add "1" more to the previous number.
 
 So basically I'm asking y'all to keep count of how many times a word comes up.
 
@@ -212,7 +209,7 @@ Got it? If yes, cool! If not, find a sibling, friend, or adult near you and ask 
 Say you start with *Harry Potter and the Sorcerer's Stone*:
 
     Mr. and Mrs. Dursley of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much...
-    
+
 And imagine that you're on the 5th word. This or something close to this is what you're going for:
 
     Mr.     -> 1
@@ -222,7 +219,7 @@ And imagine that you're on the 5th word. This or something close to this is what
     of      -> 1
 
 
-Or if you're a *wannabe-Harry-Potter* fan, ah I'm just kidding!   
+Or if you're a *wannabe-Harry-Potter* fan, ah I'm just kidding!
 
 If you started with *the-book-that-must-not-be-named* - I know you guys won't get it, but persons my age will :)
 
@@ -242,9 +239,9 @@ You have a long day ahead of you...
 
 ...
 
-*1,105,285 words later* 
+*1,105,285 words later*
 
-Now that you're done tallying up all those words, why not order all these words by the *number of times you've seen them*? 
+Now that you're done tallying up all those words, why not order all these words by the *number of times you've seen them*?
 
 See you next week!
 
@@ -254,7 +251,7 @@ Back so soon? You should have gotten something like this:
 
     psst*, remember, the format is:
      word -> # of times the word appears
-    
+
     'the' -> 80030
     'of'  -> 40025
     'and' -> 38313
@@ -268,7 +265,7 @@ Back so soon? You should have gotten something like this:
     ... there's a lot more words you've tallied up...
 
 
-Those were the most common words. 
+Those were the most common words.
 
 Now on the *less-frequent* end, you'll find your words appearing not as often...
 
@@ -288,7 +285,7 @@ Yeah Chris? Oh, 'what does *lez freekend*' mean? Um, so it means something like:
 
 Now what if I asked you to help me find this word I'm looking for? And I know this word starts with the letters: 'th'.
 
-I'm pretty sure you guys can do this much faster! 
+I'm pretty sure you guys can do this much faster!
 
 ...
 
@@ -309,10 +306,10 @@ Not bad! You only had to go through 29157 unique words after all!
     'then' -> 1558
     'these'-> 1231
     'than' -> 1206
-    ... 229 words more... 
-    
+    ... 229 words more...
 
-239 words, still kind of lot though huh? And you know your big brother, he's too lazy to do this work *by hand* (*cough* program it up  *cough*) ;) 
+
+239 words, still kind of lot though huh? And you know your big brother, he's too lazy to do this work *by hand* (*cough* program it up  *cough*) ;)
 
 So the word I'm looking for is on the tip of my tongue. I think the next letter is "i".
 
@@ -348,27 +345,27 @@ So the word I'm looking for is on the tip of my tongue. I think the next letter 
     'thirtieth'  -> 3
     'thirties'   -> 2
 
-Aha, 'thirdly' was the word I was looking for! What, you never heard of the word "thirdly" before? 
+Aha, 'thirdly' was the word I was looking for! What, you never heard of the word "thirdly" before?
 
-Now you might be saying to yourself, "*that's pretty cool!*", and you're right! 
+Now you might be saying to yourself, "*that's pretty cool!*", and you're right!
 
 And you know what's cooler? *Making everyone's life a tiny bit easier* is! :)
 
-But how can you do that with just *words*? 
+But how can you do that with just *words*?
 
-Aren't words boring and dull? 
+Aren't words boring and dull?
 
 It's like all we do is talk, write, and think with *words*. I mean, how lame, I can't even describe to you this *autocomplete* thing-slash-idea-thing without having to write it out with *words*!
 
-Ugh! I hate words! 
+Ugh! I hate words!
 
-*Whoah, wait a minute! That was not cool of me! Let's relax for a minute.* 
+*Whoah, wait a minute! That was not cool of me! Let's relax for a minute.*
 
-Let's try to give an imaginary hug to our word-factory in our brains. That part of our brain works so hard, even when we don't ask it to. How nice of our brain to do that. Not! 
+Let's try to give an imaginary hug to our word-factory in our brains. That part of our brain works so hard, even when we don't ask it to. How nice of our brain to do that. Not!
 
-What I'm trying to is sometimes it's not so nice for our brains to distract us, especially when we have homework or other, real-world, problems like adult-homework. 
+What I'm trying to is sometimes it's not so nice for our brains to distract us, especially when we have homework or other, real-world, problems like adult-homework.
 
-So how about this: let's try to think about *what* the next sentence coming out of our own mouths *will be*[\*](#note-2). 
+So how about this: let's try to think about *what* the next sentence coming out of our own mouths *will be*[\*](#note-2).
 
 Now if you're thinking about what will be coming out of my mouth, or out of your mouth, or your mouth, or your mouth, or your mouth, you're doing it wrong! (to readers who aren't one of my 4 younger siblings, that's how many I have).
 
@@ -378,25 +375,25 @@ Try your best to think about *what* the next sentence coming out of *your own* m
 
 Did you decide on your sentence? Good!
 
-Now what if I asked you to give me two reasons explaining *why* and *how* you chose the sentence you chose? 
+Now what if I asked you to give me two reasons explaining *why* and *how* you chose the sentence you chose?
 
 Wait, I can't even do that! Let's make it easier on ourselves and explain *why* and *how* we chose the first *word*.
 
-Still pretty hard huh? If you think this part is easy, I'm going to have to say "sorry" and ask you guys to try thinking about it maybe just one more time; this part isn't so easy to ask for help with either :/ 
+Still pretty hard huh? If you think this part is easy, I'm going to have to say "sorry" and ask you guys to try thinking about it maybe just one more time; this part isn't so easy to ask for help with either :/
 
 If you thought about it, and you thought it was pretty darn hard to give a *good and honest* reason as to *why* it is you chose the word you chose, let's bring out a word you guys might not understand: *probability*.
 
-If you feel like you don't *get* what the word means, sure you do! Just use the word "probably" in one of your sentences, but but try to makes some sense. 
+If you feel like you don't *get* what the word means, sure you do! Just use the word "probably" in one of your sentences, but but try to makes some sense.
 
-What do I mean? Well, let's just consider the English language. Like most other things, the English language has rules. 
+What do I mean? Well, let's just consider the English language. Like most other things, the English language has rules.
 
-The kind of rules that can be simplified down to: 
+The kind of rules that can be simplified down to:
 
-1) "***something*** *action* ***something***". 
+1) "***something*** *action* ***something***".
 
 2) Replace ***something***'s and ***action*** with words that make sense to you.
 
-Fair enough, right? 
+Fair enough, right?
 
 Now, imagine you could put *pause* right after the first word that comes out of your mouth.
 
@@ -404,11 +401,11 @@ Let's just say that first word is "the".
 
 Now in the case that you stuttered for reasons outside your conscientious control (for example: "thhh thhe the"). No big deal, you meant to say "the", so let's *flatten* it to just that!
 
-With that *word* said, what words do you *think* you might have said after it? 
+With that *word* said, what words do you *think* you might have said after it?
 
 You might tell me, "*any word I want!*
 
-Of course you could have! I bet you spent a millisecond thinking about whether or not the next word you were going to say was going to be: *guaiacol*. 
+Of course you could have! I bet you spent a millisecond thinking about whether or not the next word you were going to say was going to be: *guaiacol*.
 
 I *know* because I thought about using that word too!
 
@@ -420,23 +417,23 @@ Oh, you *know*, that place in my brain where I get to choose whether I want to s
 
 ...
 
-Ok, so clearly I'm no brainician, and that may or may not be the way our brain works - actually, it's probably super super unlikely. 
+Ok, so clearly I'm no brainician, and that may or may not be the way our brain works - actually, it's probably super super unlikely.
 
-But even though that idea is probably wrong, the idea itself sounds like a pretty darn good way of suggesting the next word or words somebody is trying to *type*. 
+But even though that idea is probably wrong, the idea itself sounds like a pretty darn good way of suggesting the next word or words somebody is trying to *type*.
 
-Hey, wait a minute. Where have we seen this before? 
+Hey, wait a minute. Where have we seen this before?
 
 *You google "where you migh..."* Hey! This is where I saw this!
 
 Most search engines of course can do this too you guys.
 
-Oh, silly Google and Microsoft and Yahoo and other giant multi-dollar-naire companies keeping such a cool and useful idea away from us, lol rofl rite!? >.< 
+Oh, silly Google and Microsoft and Yahoo and other giant multi-dollar-naire companies keeping such a cool and useful idea away from us, lol rofl rite!? >.<
 
-:P 
+:P
 
 jaisjdp$4ioj^#asif
 
-92jdfaf 
+92jdfaf
 
 101
 
@@ -450,38 +447,38 @@ Well, turns out you started working on that problem however many minutes it took
 
 And we're almost done!
 
-Where were we? Like before I got all distracted? 
+Where were we? Like before I got all distracted?
 
 ...
 
 Turns out 15 sentences ago: "...whether I want to say *the apple*, *the automobile*, *the austronaut*, etc."
 
-What if you had a way to count the number of times you've heard "apple" said after the word "the"? 
+What if you had a way to count the number of times you've heard "apple" said after the word "the"?
 
-Ask yourself the same question, but now with the word "automobile" instead of "apple". 
+Ask yourself the same question, but now with the word "automobile" instead of "apple".
 
 What if you had the time to think about every possible word that you've ever heard spoken after the word "the"? I'd say it might have looked something like this:
 
     Words you might have heard following the word "the" and the number of times you might have heard it
-    
+
     'same'     -> 996
     'french'   -> 688
     'first'    -> 652
     'old'      -> 591
-    'emperor'  -> 581 
+    'emperor'  -> 581
     'other'    -> 528
     'whole'    -> 500
     'united'   -> 466
     'room'     -> 376
     'most'     -> 373
-    
+
     ... 9331 more words...
 
 Not impressed with your brain yet? Let's continue this little thought experiment further.
 
-Imagine that you just said "the", and you could put pause after the first *letter* of the next word out of your mouth: "h". 
+Imagine that you just said "the", and you could put pause after the first *letter* of the next word out of your mouth: "h".
 
-Real quick, think of the shortest amount of time you can think of. Think of the shortest *second* you can think of. Now shorter than that too. 
+Real quick, think of the shortest amount of time you can think of. Think of the shortest *second* you can think of. Now shorter than that too.
 
 At this point, you can't even call that length of time a *second*. But in that length of time, your brain may have just done this:
 
@@ -505,7 +502,7 @@ And that brain you got did this realllllyyyyyy fast. Faster than Google, Bing, Y
 
 The basic idea is this:
 
-Assume you have a large collection of Enlish-understandable text merged into a single string. 
+Assume you have a large collection of Enlish-understandable text merged into a single string.
 
 Start by transforming that string into a list of words (AKA *ngrams of word-legth*), and also (but not required) normalize each word ('The' -> 'the').
 
@@ -520,8 +517,8 @@ At this point you can start "predict" the "final state" of a word-in-progress. B
 And he intends to write:
 
     "The third"
-    
-With the above predictive model, you'll be suggesting something like: 
+
+With the above predictive model, you'll be suggesting something like:
 
     [
         ('the', 80030),
@@ -538,11 +535,11 @@ In machine learning and AI books, you'll be presented *Conditional Probability* 
 
     P(word A and word B) = P(word B | word A) * P(word A)
 
-That equation addresses the problem that I mentioned. 
+That equation addresses the problem that I mentioned.
 
-We've handled P(wordA) already. 
+We've handled P(wordA) already.
 
-To handle P(word B | word A), which reads *probability of word A given word B *, I take a *literall* interpretation of the word "given", in that context, to mean the following: 
+To handle P(word B | word A), which reads *probability of word A given word B *, I take a *literall* interpretation of the word "given", in that context, to mean the following:
 
 *"word A" is the key pointing to a probability distribution representing all the words that follow "word A"*
 
@@ -559,17 +556,17 @@ Another shoutout to [Peter Norvig](http://norvig.com) for inspiring me and proba
 
 But I swear it's not! I actually I think I may have out-Norvig'ed Peter Norvig when it comes to describing [conditional probability](http://en.wikipedia.org/wiki/Conditional_probability): P(wordA & wordB) = P(wordB | wordA)\*P(wordA)
 
-And another one to Rob Renaud's [Gibberish Detector](https://github.com/rrenaud/Gibberish-Detector). I, out of pure chance, ran into his project some time after running into Norvig's article. I can't describe *how much it helped* to intuitively understand what the heavy hitters of "AI" consider to be introductory material; this was greatly needed b/c at the time, I felt overwhelmed by my own desire to really understand this area, and everything else going on. 
+And another one to Rob Renaud's [Gibberish Detector](https://github.com/rrenaud/Gibberish-Detector). I, out of pure chance, ran into his project some time after running into Norvig's article. I can't describe *how much it helped* to intuitively understand what the heavy hitters of "AI" consider to be introductory material; this was greatly needed b/c at the time, I felt overwhelmed by my own desire to really understand this area, and everything else going on.
 
 I do have a second article about this exact thing, only expressed differently (audience is non-programming), and it may or may not be posted soon! ~~Oh and the code too, that is if someone hasn't gotten to translating the above article to code before I can get to uploading the project :P I'm trying to get the kinks out of here and the code so it's simple, duh!~~
 
-I dedicate this work to my sisters, Cat, Melissa and Christine, and my favorite brother, Christian :) 
+I dedicate this work to my sisters, Cat, Melissa and Christine, and my favorite brother, Christian :)
 
 ####note 1
 
 [go back](#explain-like-im-5)
 
-*To avoid confusion, I wrote this section in the form of a letter to my younger siblings* 
+*To avoid confusion, I wrote this section in the form of a letter to my younger siblings*
 
 ####note 2
 
