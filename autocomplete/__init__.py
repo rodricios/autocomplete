@@ -4,8 +4,6 @@ import bottle
 
 from bottle import route, run, request, template, view
 
-import models
-
 import autocomplete
 
 from autocomplete import models
@@ -13,7 +11,6 @@ from autocomplete import models
 """load the classic Norvig big.txt corpus"""
 
 def run_server(port_num=8080):
-
 
     models.load_models()
     bottle.TEMPLATE_PATH.insert(0, os.path.join(os.path.dirname(__file__),'views'))
