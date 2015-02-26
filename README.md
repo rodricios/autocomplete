@@ -27,11 +27,11 @@ extra stuff it chose to [sue Samsung for](http://www.cnet.com/news/us-patent-off
 ## How to use:
 
 ```python
-from autocomplete import autocomplete, models
+import autocomplete
 
 # load pickled python Counter objects representing our predictive models
 # I use Peter Norvigs big.txt (http://norvig.com/big.txt) to create the predictive models
-models.load_models()
+autocomplete.load()
 
 # imagine writing "the b"
 autocomplete.predict('the','b')
