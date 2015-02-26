@@ -160,7 +160,7 @@ III. [Artificial Intelligence - A Modern Approach](http://aima.cs.berkeley.edu) 
 
 ##Motivation
 
-Similar to the motivation behind [eatiht](https://github.com/rodricios/eatiht#motivation), I found that it took far too long to find a palpable theory-to-application example of what amounts to more than a 500 pages of words across 3 books, each spanning a large index of, in certain cases, *counter-intuitive* nomenclature; read the [light criticisms](http://www.reddit.com/r/MachineLearning/comments/2fxi6v/ama_michael_i_jordan/ckep3z6) made by Michael I. Jordan on the matter (he was recently named [#2 machine learning expert "we need to know" on dataconomy.com](http://dataconomy.com/10-machine-learning-experts-you-need-to-know/)). 
+Similar to the motivation behind [eatiht](https://github.com/rodricios/eatiht#motivation), I found that it took far too long to find a palpable theory-to-application example of what amounts to more than a 500 pages of words across 3 books, each spanning a large index of, in certain cases, *counter-intuitive* nomenclature; read the [light criticisms](http://www.reddit.com/r/MachineLearning/comments/2fxi6v/ama_michael_i_jordan/ckep3z6) made by Michael I. Jordan on the matter (he was recently named [#2 machine learning expert "we need to know" on dataconomy.com](http://dataconomy.com/10-machine-learning-experts-you-need-to-know/)).
 
 You can find similar thoughts being expressed [**in an article from 2008 (updated 2009)**](http://brenocon.com/blog/2008/12/statistics-vs-machine-learning-fight/) by [Brennan O'Connor](http://brenocon.com)
 
@@ -361,7 +361,7 @@ Ugh! I hate words!
 
 *Whoah, wait a minute! That was not cool of me! Let's relax for a minute.*
 
-Let's try to give an imaginary hug to our word-factory in our brains. That part of our brain works so hard, even when we don't ask it to. How nice of our brain to do that. Not!
+Let's try to give an imaginary hug to the word-factory in our brains. That part of our brain works so hard, even when we don't ask it to. How nice of our brain to do that. Not!
 
 What I'm trying to is sometimes it's not so nice for our brains to distract us, especially when we have homework or other, real-world, problems like adult-homework.
 
@@ -379,9 +379,9 @@ Now what if I asked you to give me two reasons explaining *why* and *how* you ch
 
 Wait, I can't even do that! Let's make it easier on ourselves and explain *why* and *how* we chose the first *word*.
 
-Still pretty hard huh? If you think this part is easy, I'm going to have to say "sorry" and ask you guys to try thinking about it maybe just one more time; this part isn't so easy to ask for help with either :/
+Still pretty hard huh?
 
-If you thought about it, and you thought it was pretty darn hard to give a *good and honest* reason as to *why* it is you chose the word you chose, let's bring out a word you guys might not understand: *probability*.
+If you thought about it, and you thought it was pretty darn hard to give a *good and honest* reason as to why it is you chose the word you chose, let's bring out a word you guys might not understand: *probability*.
 
 If you feel like you don't *get* what the word means, sure you do! Just use the word "probably" in one of your sentences, but but try to makes some sense.
 
@@ -395,7 +395,7 @@ The kind of rules that can be simplified down to:
 
 Fair enough, right?
 
-Now, imagine you could put *pause* right after the first word that comes out of your mouth.
+Now, imagine you could put "pause" right after the first word that comes out of your mouth.
 
 Let's just say that first word is "the".
 
@@ -420,38 +420,6 @@ Oh, you *know*, that place in my brain where I get to choose whether I want to s
 Ok, so clearly I'm no brainician, and that may or may not be the way our brain works - actually, it's probably super super unlikely.
 
 But even though that idea is probably wrong, the idea itself sounds like a pretty darn good way of suggesting the next word or words somebody is trying to *type*.
-
-Hey, wait a minute. Where have we seen this before?
-
-*You google "where you migh..."* Hey! This is where I saw this!
-
-Most search engines of course can do this too you guys.
-
-Oh, silly Google and Microsoft and Yahoo and other giant multi-dollar-naire companies keeping such a cool and useful idea away from us, lol rofl rite!? >.<
-
-:P
-
-jaisjdp$4ioj^#asif
-
-92jdfaf
-
-101
-
-...
-
-Sorry about that.
-
-Ok, let's not lose sight of the much more interesting and useful question we could ask next: *How they do that?!*
-
-Well, turns out you started working on that problem however many minutes it took you, or whoever's reading this to you, to read from the beginning of the article to here!
-
-And we're almost done!
-
-Where were we? Like before I got all distracted?
-
-...
-
-Turns out 15 sentences ago: "...whether I want to say *the apple*, *the automobile*, *the austronaut*, etc."
 
 What if you had a way to count the number of times you've heard "apple" said after the word "the"?
 
@@ -544,7 +512,6 @@ To handle P(word B | word A), which reads *probability of word A given word B *,
 *"word A" is the key pointing to a probability distribution representing all the words that follow "word A"*
 
 Once we can represent this second model, we can also apply the *filtering* step - given that we know more letters in the second word, we can zone in on more precise suggestions.
-
 
 ---
 
