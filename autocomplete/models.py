@@ -7,7 +7,7 @@ import re
 import os
 import collections
 import pickle
-import helpers
+from autocomplete import helpers
 
 WORDS = []
 

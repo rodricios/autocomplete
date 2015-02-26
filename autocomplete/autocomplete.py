@@ -50,7 +50,7 @@ def predict_currword(word,top_n=10):
     try:
         return [(k,v) for k,v in models.WORDS_MODEL.most_common() if k.startswith(word)]
     except KeyError:
-        return word
+        Exception("Please load predictive models. Run: \n\timport autocomplete\n\tautocomplete.load()")
 
 
 def predict_currword_given_lastword(word_1, word_2,top_n=10):
@@ -66,10 +66,13 @@ def predict(wordA,wordB,top_n = 10):
     probable suggestions.
     """
 
-    if wordA and wordB:
-        return predict_currword_given_lastword(wordA,wordB,top_n=top_n)
-    else:
-        return predict_currword(wordA,top_n)
+    try:
+        if wordA and wordB:
+            return predict_currword_given_lastword(wordA,wordB,top_n=top_n)
+        else:
+            return predict_currword(wordA,top_n)
+    except KeyError:
+        raise Exception("Please load predictive models. Run: \n\timport autocomplete\n\tautocomplete.load()")
 
 
 def split_predict(text,top_n=10):
