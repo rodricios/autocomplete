@@ -44,9 +44,9 @@ from bottle import route, run, debug
 
 from collections import Counter
 
-import helpers
+from . import helpers
 
-import models
+from . import models
 
 
 def run_server(port_num=8080):
@@ -80,8 +80,8 @@ def predict_currword(word, top_n=10):
         return [(k, v) for k, v in models.WORDS_MODEL.most_common(top_n)
                 if k.startswith(word)]
     except KeyError:
-        raise Exception("Please load predictive models. \
-                        Run: \n\tautocomplete.load()")
+        raise Exception("Please load predictive models. Run:\
+                        \n\tautocomplete.load()")
 
 
 def predict_currword_given_lastword(first_word, second_word, top_n=10):
@@ -106,8 +106,8 @@ def predict(first_word, second_word, top_n=10):
         else:
             return predict_currword(first_word, top_n)
     except KeyError:
-        raise Exception("Please load predictive models. \
-                        Run: \n\tautocomplete.load()")
+        raise Exception("Please load predictive models. Run:\
+                        \n\tautocomplete.load()")
 
 
 def split_predict(text, top_n=10):

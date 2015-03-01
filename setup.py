@@ -5,7 +5,7 @@ def readme():
         return f.read()
 
 setup(name='autocomplete',
-      version='0.0.1',
+      version='0.0.103',
       description='tiny \'autocomplete\' tool using a "hidden markov model"',
       keywords='autocomplete autosuggest suggest complete spell spellsuggest \
                 hidden markov model HMM hmm markov chain \

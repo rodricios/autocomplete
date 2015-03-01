@@ -9,7 +9,7 @@ import collections
 
 import pickle
 
-import helpers
+from . import helpers
 
 WORDS = []
 
