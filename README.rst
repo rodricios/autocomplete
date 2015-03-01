@@ -1,8 +1,8 @@
 *Autocomplete* or: How I learned to stop spelling and love our AI overlords
 ===========================================================================
 
-A practical guide to implementing "autocomplete" yourself! It follows
-the sometimes misunderstood principles of conditional probability
+A practical guide to implementing "autocomplete"! It follows the
+sometimes misunderstood principles of conditional probability
 distributions and the generalized Hidden Markov Model (HMM).
 
 Fun fact: Your iPhone's "autocomplete" was implemented using a HMM! Plus
@@ -32,11 +32,11 @@ How to use:
 
 .. code:: python
 
-    from autocomplete import autocomplete, models
+    import autocomplete
 
     # load pickled python Counter objects representing our predictive models
     # I use Peter Norvigs big.txt (http://norvig.com/big.txt) to create the predictive models
-    models.load_models()
+    autocomplete.load()
 
     # imagine writing "the b"
     autocomplete.predict('the','b')
@@ -48,7 +48,7 @@ How to use:
      ('body', 149),
      ...]
 
-    # now you're typing "the bo"
+    # now you type an "o"
 
     autocomplete.predict('the','bo')
 
@@ -66,7 +66,6 @@ the training method:
 
 .. code:: python
 
-
     from autocomplete import models
 
     models.train_models('some giant string of text')
@@ -74,7 +73,6 @@ the training method:
 Want to run it as a server (bottlepy required)?
 
 .. code:: python
-
 
     import autocomplete
 
@@ -96,6 +94,13 @@ Now head over to http://localhost:8080/the/bo
     http://localhost:8080/the/bos
     #output
     {"boscombe": 11, "boston": 7, "boss": 1, "bosom": 5, "bosses": 4}
+
+Obligatory tests
+~~~~~~~~~~~~~~~~
+
+::
+
+    python setup.py test
 
 --------------
 

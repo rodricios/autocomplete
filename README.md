@@ -1,7 +1,7 @@
 *Autocomplete* or: How I learned to stop spelling and love our AI overlords
 ===
 
-A practical guide to implementing "autocomplete" yourself! It follows the
+A practical guide to implementing "autocomplete"! It follows the
 sometimes misunderstood principles of conditional probability distributions
 and the generalized Hidden Markov Model (HMM).
 
@@ -43,7 +43,7 @@ autocomplete.predict('the','b')
  ('body', 149),
  ...]
 
-# now you're typing "the bo"
+# now you type an "o"
 
 autocomplete.predict('the','bo')
 
@@ -60,7 +60,6 @@ autocomplete.predict('the','bo')
 If you have your own language model in the form described in [ELI5](#explain-like-im-5), then use the *models* submodule to call the training method:
 
 ```python
-
 from autocomplete import models
 
 models.train_models('some giant string of text')
@@ -70,7 +69,6 @@ models.train_models('some giant string of text')
 Want to run it as a server (bottlepy required)?
 
 ```python
-
 import autocomplete
 
 autocomplete.run_server()
@@ -93,6 +91,14 @@ http://localhost:8080/the/bos
 #output
 {"boscombe": 11, "boston": 7, "boss": 1, "bosom": 5, "bosses": 4}
 ```
+
+###Obligatory tests
+```
+python setup.py test
+```
+
+
+
 ---
 
 ##[tl;dr](https://github.com/rodricios/autocomplete/blob/master/autocomplete/models.py)
