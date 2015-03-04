@@ -3,10 +3,7 @@
 
 A practical guide to implementing "autocomplete"! It follows the
 sometimes misunderstood principles of conditional probability distributions
-and the generalized Hidden Markov Model (HMM).
-
-Fun fact: Your iPhone's "autocomplete" was implemented using a HMM! Plus the
-extra stuff it chose to [sue Samsung for](http://www.cnet.com/news/us-patent-office-rejects-apple-autocomplete-patent-used-against-samsung/).
+and the generalized Markov Chain<sup>[1](https://www.reddit.com/r/programming/comments/2xwi3g/textbooks_dont_explain_the_practicality_of_hidden/cp41osh)<sup>.
 
 
 ## Skip to:
