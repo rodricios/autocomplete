@@ -77,8 +77,8 @@ def predict_currword(word, top_n=10):
     """given a word, return top n suggestions based off frequency of words
     prefixed by said input word"""
     try:
-        return [(k, v) for k, v in models.WORDS_MODEL.most_common(top_n)
-                if k.startswith(word)]
+        return [(k, v) for k, v in models.WORDS_MODEL.most_common()
+                if k.startswith(word)][:top_n]
     except KeyError:
         raise Exception("Please load predictive models. Run:\
                         \n\tautocomplete.load()")

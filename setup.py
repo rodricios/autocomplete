@@ -5,10 +5,11 @@ def readme():
         return f.read()
 
 setup(name='autocomplete',
-      version='0.0.103',
+      version='0.0.104',
       description='tiny \'autocomplete\' tool using a "hidden markov model"',
       keywords='autocomplete autosuggest suggest complete spell spellsuggest \
-                hidden markov model HMM hmm markov chain \
+                hidden markov model HMM hmm markov chain iPhone iphone suggest \
+                Google suggest search as you type searchsuggest type spell \
                 automatic spelling word suggest machine learning ai text \
                 conditional probability model probabilistic perspective \
                 Rodrigo Palacios rodrigo palacios im-rodrigo im_rodrigo \
