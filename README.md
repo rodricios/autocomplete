@@ -13,6 +13,8 @@ and the generalized Markov Chain<sup>[1](https://www.reddit.com/r/programming/co
 * [Motivation](#motivation)
 * [ELI5](#explain-like-im-5)
 * [If you're not 5](#if-youre-not-5)
+* [Afterword](https://github.com/rodricios/autocomplete#afterword)
+
 
 
 ---
@@ -177,7 +179,7 @@ You can find similar thoughts being expressed [**in an article from 2008 (update
 
 If you've found this readable and informative, please consider putting on the goofiest face and reading this to your kids, if you have any :) If you do, please send me your thoughts on the experience.
 
-I'm only interested in lowering the barrier to entry. I should have included this note since the beginning (sorry to those who undoubtedly left with a bad taste in their mouths).
+I'm only interested in lowering the barrier to entry. I should have included this note since the beginning (sorry to those who undoubtedly left with a bad taste in their mouth).
 
 You can contact me at rodrigopala91@gmail.com
 
@@ -366,9 +368,13 @@ Ugh! I hate words!
 
 Let's try to give an imaginary hug to the word-factory in our brains. That part of our brain works so hard, even when we don't ask it to. How nice of our brain to do that. Not!
 
-What I'm trying to is sometimes it's not so nice for our brains to distract us, especially when we have homework or other, real-world, problems like adult-homework.
+What I'm trying to say is that sometimes it's not very nice for our brains to distract us, especially when we have homework or other, real-world problems like adult-homework.
 
-So how about this: let's try to think about *what* the next sentence coming out of our own mouths *will be*[\*](#note-2).
+...
+
+So how about this:
+
+As a mental exercise, let's just try to think about *what* the next sentence coming out of our own mouths *will be*[\*](#note-2).
 
 Now if you're thinking about what will be coming out of my mouth, or out of your mouth, or your mouth, or your mouth, or your mouth, you're doing it wrong! (to readers who aren't one of my 4 younger siblings, that's how many I have).
 
@@ -378,17 +384,19 @@ Try your best to think about *what* the next sentence coming out of *your own* m
 
 Did you decide on your sentence? Good!
 
-Now what if I asked you to give me two reasons explaining *why* and *how* you chose the sentence you chose?
+Now what if I asked you to give me two **good** reasons explaining *why* and *how* you chose the sentence you chose?
 
-Wait, I can't even do that! Let's make it easier on ourselves and explain *why* and *how* we chose the first *word*.
+Wait, I can't even do that! Let's make it easier on ourselves. Let's try to only answer *why* and *how* we chose just the first word.
 
 Still pretty hard huh?
 
-If you thought about it, and you thought it was pretty darn hard to give a *good and honest* reason as to why it is you chose the word you chose, let's bring out a word you guys might not understand: *probability*.
+If you thought it was pretty darn hard to give a *good and honest* reason as to why it is you chose the word you chose, it's alright. :)
 
-If you feel like you don't *get* what the word means, sure you do! Just use the word "probably" in one of your sentences, but but try to makes some sense.
+But like all couch-scientists, let's just make a guess! My guess is: our brain is a **probabilistic machine**.
 
-What do I mean? Well, let's just consider the English language. Like most other things, the English language has rules.
+If you feel like you don't *get* what the word "probabilisitic" or "probability" means, sure you do! Just use the word "probably" in one of your sentences, but try to make some sense.
+
+Ok, so what do I mean? Well, let's just consider the English language. Like most other things, the English language has rules.
 
 The kind of rules that can be simplified down to:
 
@@ -397,6 +405,20 @@ The kind of rules that can be simplified down to:
 2) Replace ***something***'s and ***action*** with words that make sense to you.
 
 Fair enough, right?
+
+Now imagine that your brain essentially has those rules "branded" or "recorded" into itself. Ok, so now I'm starting to not make much sense huh?
+
+How about this? How many times have you heard, 
+
+"**Do** your **bed**!"
+
+"**Brush** your **teeth**!" 
+
+"**Let's** get **food**!"
+
+While each one of you guys may have not heard those *exact* sentences, what I'm trying to say makes sense right? *That you probably heard certain sentences more often than others?*
+
+...
 
 Now, imagine you could put "pause" right after the first word that comes out of your mouth.
 
@@ -420,9 +442,9 @@ Oh, you *know*, that place in my brain where I get to choose whether I want to s
 
 ...
 
-Ok, so clearly I'm no brainician, and that may or may not be the way our brain works - actually, it's probably super super unlikely.
+Ok, so clearly I'm no brainician, and that may or may not be the way our brain works.
 
-But even though that idea is probably wrong, the idea itself sounds like a pretty darn good way of suggesting the next word or words somebody is trying to *type*.
+But even though that idea might be wrong, the idea itself sounds like a pretty darn good way of suggesting the next word or words somebody is trying to *type*.
 
 What if you had a way to count the number of times you've heard "apple" said after the word "the"?
 
@@ -468,6 +490,13 @@ At this point, you can't even call that length of time a *second*. But in that l
 
 And that brain you got did this realllllyyyyyy fast. Faster than Google, Bing, Yahoo and any other company can ever hope to beat. And your brain did this without even asking for your permission. I think our brains are trying to control us you guys, oh no!
 
+...
+
+Thanks for reading this far folks. Please go to the [afterword](https://github.com/rodricios/autocomplete#afterword) for some of the resources I've found useful in both building the intuition, and writing this article. 
+
+Also, if it's not too much to ask, consider following me or tweeting this to your friends and/or family, any support is appreciated :)
+
+- [@rodricios](https://twitter.com/rodricios)
 
 ##If you're not 5
 
