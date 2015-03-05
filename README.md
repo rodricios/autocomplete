@@ -502,7 +502,7 @@ Also, if it's not too much to ask, consider following me or tweeting this to you
 
 The basic idea is this:
 
-Assume you have a large collection of Enlish-understandable text merged into a single string.
+Assume you have a large collection of English-understandable text merged into a single string.
 
 Start by transforming that string into a list of words (AKA *ngrams of word-legth*), and also (but not required) normalize each word ('The' -> 'the').
 
