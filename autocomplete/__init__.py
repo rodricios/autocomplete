@@ -44,7 +44,7 @@ from bottle import route, run, debug
 
 from autocomplete import models
 
-from autocomplete.autocomplete import predict
+from .autocomplete import predict
 
 def run_server(port_num=8080):
     """little demo server for demo'ing sake"""
