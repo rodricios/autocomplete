@@ -1,20 +1,29 @@
 *Autocomplete* or: How I learned to stop spelling and love our AI overlords
 ===
 
-A practical guide to implementing "autocomplete"! It follows the
-sometimes misunderstood principles of conditional probability distributions
-and the generalized Markov Chain<sup>[1](https://www.reddit.com/r/programming/comments/2xwi3g/textbooks_dont_explain_the_practicality_of_hidden/cp41osh)<sup>.
+Have you ever woken up and said to yourself, "Hey, I really wish I knew how the underlying
+probabilistic principles account for the effectiveness of corrections and suggestions
+given to me as I type out my next Google query or text on my iPhone"?
+
+Me neither! But let's imagine we did.
+
+This project tries to lay out the bare minimum in order to help map the theory
+to the intuition.
+
+So grab a cup of coffee, take a sip and read along as we explore the sometimes misunderstood
+principles of conditional probability and the generalized [Markov chain](http://en.wikipedia.org/wiki/Markov_chain)
+and the [Hidden Markov Model](http://en.wikipedia.org/wiki/Hidden_Markov_model)(?)<sup>[1](https://www.reddit.com/r/programming/comments/2xwi3g/textbooks_dont_explain_the_practicality_of_hidden/cp41osh)<sup>.
 
 
 ## Skip to:
 
 * [How to's](#how-to-install)
+* [New: Spell Correction](#spell-correction)
 * [tl;dr?](#tldr)
 * [Motivation](#motivation)
 * [ELI5](#explain-like-im-5)
 * [If you're not 5](#if-youre-not-5)
 * [Afterword](https://github.com/rodricios/autocomplete#afterword)
-
 
 
 ---
@@ -53,8 +62,45 @@ autocomplete.predict('the','bo')
  ('bottom', 32),
  ('box', 24),
  ...]
+```
+
+###Spell Correction
+
+Now say you are in the process of typing "body" (with a preceding "the")
+
+```python
+
+autocomplete.predict('the','bo')
+
+[('bone', 175),
+ ('body', 149),
+ ('bones', 122),
+ ('boy', 46),
+ ('bottom', 32),
+ ('box', 24),
+ ...]
 
 ```
+
+And then you make the fatal error of typing an "f" instead of a "d"
+
+```python
+
+autocomplete.predict('the','bof')
+
+[('body', 149),
+ ('bottom', 32),
+ ('borzois', 16),
+ ('bottle', 13),
+ ('bodies', 13),
+ ('border', 12)
+ ...]
+
+```
+
+Relax! Autocomplete has you covered. Using a simple ["fat-finger"](http://en.wikipedia.org/wiki/Fat-finger_error) error model,
+you can rest assured that you won't be making [six-hundred billion dollar mistakes](http://www.bbc.com/news/business-29454265) at your Japanese investment firm.
+
 
 If you have your own language model in the form described in [ELI5](#explain-like-im-5), then use the *models* submodule to call the training method:
 
@@ -97,7 +143,6 @@ python setup.py test
 ```
 
 
-
 ---
 
 ##[tl;dr](https://github.com/rodricios/autocomplete/blob/master/autocomplete/models.py)
@@ -125,7 +170,7 @@ More on this below.
     WORDS_MODEL = collections.Counter(WORDS)
 
     # another preperation step
-    # [a,b,c,d] -> [[a,b], [c,d]]
+    # [a,b,c,d] -> [[a,b], [b,c], [c,d]]
     WORD_TUPLES = list(helpers.chunks(WORDS, 2))
 
     # second model -> P(next word | prev. word)
@@ -408,11 +453,11 @@ Fair enough, right?
 
 Now imagine that your brain essentially has those rules "branded" or "recorded" into itself. Ok, so now I'm starting to not make much sense huh?
 
-How about this? How many times have you heard, 
+How about this? How many times have you heard,
 
 "**Do** your **bed**!"
 
-"**Brush** your **teeth**!" 
+"**Brush** your **teeth**!"
 
 "**Let's** get **food**!"
 
@@ -492,7 +537,7 @@ And that brain you got did this realllllyyyyyy fast. Faster than Google, Bing, Y
 
 ...
 
-Thanks for reading this far folks. Please go to the [afterword](https://github.com/rodricios/autocomplete#afterword) for some of the resources I've found useful in both building the intuition, and writing this article. 
+Thanks for reading this far folks. Please go to the [afterword](https://github.com/rodricios/autocomplete#afterword) for some of the resources I've found useful in both building the intuition, and writing this article.
 
 Also, if it's not too much to ask, consider following me or tweeting this to your friends and/or family, any support is appreciated :)
 
