@@ -1,19 +1,9 @@
 *Autocomplete* or: How I learned to stop spelling and love our AI overlords
 ===
 
-Have you ever woken up and said to yourself, "Hey, I really wish I knew how the underlying
-probabilistic principles account for the effectiveness of corrections and suggestions
-given to me as I type out my next Google query or text on my iPhone"?
+Autocomplete is an adult and kid friendly exercise in creating your own AI program. 
 
-Me neither! But let's imagine we did.
-
-This project tries to lay out the bare minimum in order to help map the theory
-to the intuition.
-
-So grab a cup of coffee, take a sip and read along as we explore the sometimes misunderstood
-principles of conditional probability and the generalized [Markov chain](http://en.wikipedia.org/wiki/Markov_chain)
-and the [Hidden Markov Model](http://en.wikipedia.org/wiki/Hidden_Markov_model)(?)<sup>[1](https://www.reddit.com/r/programming/comments/2xwi3g/textbooks_dont_explain_the_practicality_of_hidden/cp41osh)<sup>.
-
+For those short on time, the [ELI5](#explain-like-im-5) section is devoid of nomenclature but lengthy; the [tl;dr](#tldr) section describes the implementation using the appropriate terms - basic principles of conditional probability, generalized [Markov chain](http://en.wikipedia.org/wiki/Markov_chain) - but is short, concise, and includes references for further reading. 
 
 ## Skip to:
 
