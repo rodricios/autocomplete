@@ -58,14 +58,14 @@ def train_models(corpus, model_name="models_compressed.pkl"):
             pass
 
     if model_name:
-        save_models(os.path.join(os.path.dirname(__file__), model_name))
+        save_models(os.path.join(os.getcwd(), model_name))
 
 
 def train_bigtxt():
     """unnecessary helper function for training against
     default corpus data (big.txt)"""
 
-    bigtxtpath = os.path.join(os.path.dirname(__file__), 'big.txt')
+    bigtxtpath = os.path.join(os.getcwd(), 'big.txt')
     with open(bigtxtpath, 'rb') as bigtxtfile:
 
         train_models(str(bigtxtfile.read()))
@@ -76,7 +76,7 @@ def save_models(path=None):
     save to module's folder under name 'models_compressed.pkl'"""
 
     if path == None:
-        path = os.path.join(os.path.dirname(__file__), 'models_compressed.pkl')
+        path = os.path.join(os.getcwd(), 'models_compressed.pkl')
 
     print("saving to:", path)
     #save for next use. pickle format: (key=model name, value=model)
@@ -91,7 +91,7 @@ def load_models(load_path=None):
     provide the path to Python pickle object."""
 
     if load_path is None:
-        load_path = os.path.join(os.path.dirname(__file__),
+        load_path = os.path.join(os.getcwd(),
                                  'models_compressed.pkl')
     try:
         models = pickle.load(open(load_path,'rb'))
