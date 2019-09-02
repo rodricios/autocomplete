@@ -31,9 +31,9 @@ import autocomplete
 
   docker build -t autocomp_image .   
 
-## Run Docker container and go to http://localhost:8080/
+## Run Docker container and go to http://localhost:5000/
 
-docker run -d --name autocomp_cont autocomp_image
+docker run -d --name autocomp -p 5000:5000 autocomp_image
 
 
 
