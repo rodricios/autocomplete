@@ -33,7 +33,7 @@ import autocomplete
 
 ## Run Docker container and go to http://localhost:5000/
 
-docker run -d --name autocomp -p 5000:5000 autocomp_image
+docker run -d --name autocomp -p 8000:8000 autocomp_image
 
 
 
