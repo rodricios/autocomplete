@@ -54,7 +54,7 @@ autocomplete.predict('the','bo')
  ...]
 ```
 
-###Spell Correction
+### Spell Correction
 
 Now say you are in the process of typing "body" (with a preceding "the")
 
@@ -127,7 +127,7 @@ http://localhost:8080/the/bos
 {"boscombe": 11, "boston": 7, "boss": 1, "bosom": 5, "bosses": 4}
 ```
 
-###Obligatory tests
+### Obligatory tests
 ```
 python setup.py test
 ```
@@ -135,7 +135,7 @@ python setup.py test
 
 ---
 
-##[tl;dr](https://github.com/rodricios/autocomplete/blob/master/autocomplete/models.py)
+## [tl;dr](https://github.com/rodricios/autocomplete/blob/master/autocomplete/models.py)
 
 The following code excerpt is my interpretation of a series of lessons/concepts expressed in a number of different books.
 
@@ -198,7 +198,7 @@ III. [Artificial Intelligence - A Modern Approach](http://aima.cs.berkeley.edu) 
 
     c. the notion of "conditioning" found in pg. 492-494
 
-##Motivation
+## Motivation
 
 Similar to the motivation behind [eatiht](https://github.com/rodricios/eatiht#motivation), I found that it took far too long to find a palpable theory-to-application example of what amounts to more than a 500 pages of words across 3 books, each spanning a large index of, in certain cases, *counter-intuitive* nomenclature; read the [light criticisms](http://www.reddit.com/r/MachineLearning/comments/2fxi6v/ama_michael_i_jordan/ckep3z6) made by Michael I. Jordan on the matter (he was recently named [#2 machine learning expert "we need to know" on dataconomy.com](http://dataconomy.com/10-machine-learning-experts-you-need-to-know/)).
 
@@ -533,7 +533,7 @@ Also, if it's not too much to ask, consider following me or tweeting this to you
 
 - [@rodricios](https://twitter.com/rodricios)
 
-##If you're not 5
+## If you're not 5
 
 The basic idea is this:
 
@@ -582,7 +582,7 @@ Once we can represent this second model, we can also apply the *filtering* step 
 
 ---
 
-###Afterword
+### Afterword
 
 notes: \*I have to give a shout out to [Sam Harris](https://twitter.com/SamHarrisOrg) for being, AFAIK, the first person or one of the firsts, in [wonderfully putting into words](https://www.youtube.com/watch?v=pCofmZlC72g#t=1144) what I've borrowed and slightly adapted for this writing. [I highly recommend his work](http://www.samharris.org/)
 
@@ -596,12 +596,12 @@ I do have a second article about this exact thing, only expressed differently (a
 
 I dedicate this work to my sisters, Cat, Melissa and Christine, and my favorite brother, Christian :)
 
-####note 1
+#### note 1
 
 [go back](#explain-like-im-5)
 
 *To avoid confusion, I wrote this section in the form of a letter to my younger siblings*
 
-####note 2
+#### note 2
 
 *I'm borrowing, what I consider, [one of the most beautiful thought experiments I've ever heard trying to describe one's self](https://www.youtube.com/watch?v=pCofmZlC72g#t=1144). I'm a big fan of Sam Harris's work. Highly recommend!
