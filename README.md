@@ -27,6 +27,16 @@ For those short on time, the [ELI5](#explain-like-im-5) section is devoid of nom
 ```python
 import autocomplete
 
+## Play using Docker
+
+  docker build -t autocomp_image .   
+
+## Run Docker container and go to http://localhost:5000/
+
+docker run -d --name autocomp -p 8000:8000 autocomp_image
+
+
+
 # load pickled python Counter objects representing our predictive models
 # I use Peter Norvigs big.txt (http://norvig.com/big.txt) to create the predictive models
 autocomplete.load()
