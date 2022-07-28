@@ -39,6 +39,7 @@ def this_word(word, top_n=10):
     """given an incomplete word, return top n suggestions based off
     frequency of words prefixed by said input word"""
     try:
+        word=word.lower()
         return [(k, v) for k, v in models.WORDS_MODEL.most_common()
                 if k.startswith(word)][:top_n]
     except KeyError:
@@ -54,6 +55,8 @@ def this_word_given_last(first_word, second_word, top_n=10):
     words prefixed by the input GIVEN the occurence of the last word"""
 
     #Hidden step
+    first_word=first_word.lower()
+    second_word=second_word.lower()
     possible_second_words = [second_word[:-1]+char
                              for char in NEARBY_KEYS[second_word[-1]]
                              if len(second_word) > 2]
@@ -78,6 +81,8 @@ def predict(first_word, second_word, top_n=10):
     """
 
     try:
+        first_word=first_word.lower()
+        second_word=second_word.lower()
         if first_word and second_word:
             return predict_currword_given_lastword(first_word,
                                                    second_word,
